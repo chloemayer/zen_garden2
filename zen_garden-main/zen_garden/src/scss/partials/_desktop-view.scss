@@ -1,0 +1,29 @@
+@import "_typography.scss";
+
+@media only screen and (min-width: 768px){
+body{
+    background: $color-5; 
+    font-family: $primary-font;
+}
+h1, h2, h3, h4{
+    font-family: $secondary-font;
+}
+.preamble, .participation, .requirements{
+    background: $color-1; 
+    text-align: left;
+    p{
+        color: $color-6
+    }
+
+}
+.main, .benefits{
+    background: $color-4; 
+    text-align: right;
+}
+.preamble, .participation, .requirements,
+.main, .benefits{
+   padding: 1rem; 
+   margin: 1rem; 
+    border-radius: 1rem;
+}
+}
