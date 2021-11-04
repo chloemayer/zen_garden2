@@ -16,5 +16,8 @@
     "@parcel/transformer-sass": "^2.0.0-beta.2",
     "parcel": "*",
     "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "sass": "^1.43.4"
   }
 }
