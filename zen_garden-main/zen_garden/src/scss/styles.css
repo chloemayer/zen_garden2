@@ -4,106 +4,83 @@ h1,
 h2,
 h3 {
   font-family: "Lobster", cursive;
-  color: #613a3a;
-}
+  color: #de7f08; }
 
 h1 {
   font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 0.4em;
-}
+  margin: 1rem; }
 
 h2 {
-  font-weight: bold;
   text-transform: uppercase;
-  margin: 1em 0;
-}
+  padding: 0 1rem; }
 
 section > h2::before {
   /* number before each section title */
-  color: #f68d09;
-}
+  color: #f68d09; }
 
 p {
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #687f53;
-}
-p a {
-  color: #687f53;
-  text-decoration: underline;
-}
+  color: #687f53; }
+  p a {
+    color: #687f53;
+    text-decoration: underline; }
 
 @media only screen and (min-width: 768px) {
   body {
-    background: #fff8dd;
-    font-family: "Roboto", sans-serif;
-  }
+    background: #fffbeb;
+    font-family: "Roboto", sans-serif; }
 
   h1, h2, h3, h4 {
-    font-family: "Lobster", cursive;
-  }
+    font-family: "Lobster", cursive; }
 
   .preamble, .participation, .requirements {
     background: #687f53;
-    text-align: left;
-  }
-  .preamble p, .participation p, .requirements p {
-    color: #613a3a;
-  }
+    text-align: left; }
+    .preamble p, .participation p, .requirements p {
+      color: #613a3a; }
 
   .main, .benefits {
     background: #f9af53;
-    text-align: right;
-  }
+    text-align: right; }
 
   .preamble, .participation, .requirements,
-.main, .benefits {
+  .main, .benefits {
     padding: 1rem;
     margin: 1rem;
-    border-radius: 1rem;
-  }
-}
+    border-radius: 1rem; } }
 h1,
 h2,
 h3 {
   font-family: "Lobster", cursive;
-  color: #613a3a;
-}
+  color: #de7f08; }
 
 h1 {
   font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 0.4em;
-}
+  margin: 1rem; }
 
 h2 {
-  font-weight: bold;
   text-transform: uppercase;
-  margin: 1em 0;
-}
+  padding: 0 1rem; }
 
 section > h2::before {
   /* number before each section title */
-  color: #f68d09;
-}
+  color: #f68d09; }
 
 p {
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #687f53;
-}
-p a {
-  color: #687f53;
-  text-decoration: underline;
-}
+  color: #687f53; }
+  p a {
+    color: #687f53;
+    text-decoration: underline; }
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; }
 
 @media only screen and (max-width: 768px) {
   body {
-    background: green;
-  }
-}
+    background: green; } }
 
 /*# sourceMappingURL=styles.css.map */

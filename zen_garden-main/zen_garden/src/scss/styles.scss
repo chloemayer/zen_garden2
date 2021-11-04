@@ -2,9 +2,24 @@
 @import "partials/desktop-view";
 @import "partials/typography";
 
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
 @media only screen and (max-width: 768px){
 body {
   background: green;
- 
 }
+
+}
+
+
+@media only screen and (max-width: 1024px){
+
+}
+
+@media only screen and (max-width: 1600px){
+
 }
