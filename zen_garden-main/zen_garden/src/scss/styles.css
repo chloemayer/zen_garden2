@@ -4,20 +4,17 @@ h1,
 h2,
 h3 {
   font-family: "Lobster", cursive;
-  color: #613a3a;
+  color: #de7f08;
 }
 
 h1 {
   font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 0.4em;
+  margin: 1rem;
 }
 
 h2 {
-  font-weight: bold;
   text-transform: uppercase;
-  margin: 1em 0;
+  padding: 0 1rem;
 }
 
 section > h2::before {
@@ -35,7 +32,7 @@ p a {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48rem) {
   body {
     background: #fff8dd;
     font-family: "Roboto", sans-serif;
@@ -49,12 +46,16 @@ p a {
     background: #687f53;
     text-align: left;
   }
+  .preamble h3, .participation h3, .requirements h3 {
+    color: #fff8dd;
+  }
   .preamble p, .participation p, .requirements p {
     color: #613a3a;
   }
 
   .main, .benefits {
-    background: #f9af53;
+    background: #fff8dd;
+    border: solid #f9af53 0.2rem;
     text-align: right;
   }
 
@@ -69,20 +70,17 @@ h1,
 h2,
 h3 {
   font-family: "Lobster", cursive;
-  color: #613a3a;
+  color: #de7f08;
 }
 
 h1 {
   font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 0.4em;
+  margin: 1rem;
 }
 
 h2 {
-  font-weight: bold;
   text-transform: uppercase;
-  margin: 1em 0;
+  padding: 0 1rem;
 }
 
 section > h2::before {
@@ -100,7 +98,7 @@ p a {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) {
   body {
     background: green;
   }

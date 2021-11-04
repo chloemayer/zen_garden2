@@ -1,6 +1,6 @@
 @import "_typography.scss";
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 48rem){
 body{
     background: $color-5; 
     font-family: $primary-font;
@@ -11,13 +11,17 @@ h1, h2, h3, h4{
 .preamble, .participation, .requirements{
     background: $color-1; 
     text-align: left;
+    h3{
+        color: $color-5
+    }
     p{
         color: $color-6
     }
 
 }
 .main, .benefits{
-    background: $color-4; 
+    background: $color-5; 
+    border: solid $color-4 .2rem;
     text-align: right;
 }
 .preamble, .participation, .requirements,
