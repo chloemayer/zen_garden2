@@ -1,5 +1,6 @@
 node_modules
-# *.css
+*.css
+style.css.map
 .cache
 .parcel-cache
 build
