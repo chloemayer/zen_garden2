@@ -4,6 +4,8 @@
 body{
     background: $color-5; 
     font-family: $primary-font;
+    max-width: 1050px;
+    margin: auto
 }
 h1, h2, h3, h4{
     font-family: $secondary-font;
@@ -21,19 +23,122 @@ h1, h2, h3, h4{
     }
 
 }
-.main, .benefits{
+.explanation, .benefits{
     background: $color-5; 
     border: solid $color-4 .2rem;
     text-align: right;
 }
 .preamble, .participation, .requirements,
-.main, .benefits{
+.explanation, .benefits{
    padding: 1rem; 
    margin: 1rem; 
     border-radius: 1rem;
+   
 }
-.design-selection{
+.wrapper {
     background-image: url("/zen_garden-main/zen_garden/images/record.png");
-   background-size: 200px 200px;
+   background-size: 1500px ;
+   background-repeat: no-repeat;
+   background-position: -701px 0px;
 }
+//GRID FORMATTING 
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "intro intro"
+      "sidebar main";
+  }
+  
+  .intro {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "summary preamble";
+    grid-area: intro;
+  }
+  
+  .summary { grid-area: summary; }
+  
+  .preamble { grid-area: preamble; }
+  
+  header { grid-area: header; }
+  
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "explanation"
+      "participation"
+      "benefits"
+      "requirements"
+      "footer";
+    grid-area: main;
+  }
+  
+  .explanation { grid-area: explanation; }
+  
+  .participation { grid-area: participation; }
+  
+  .benefits { 
+    grid-area: benefits; 
+    margin: 2rem 0px 1rem -31rem;
 }
+  
+  .requirements { 
+    grid-area: requirements; 
+    margin: 2rem 0px 1rem -31rem;
+}
+  
+  footer { grid-area: footer; }
+  
+  .sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "wrapper";
+    grid-area: sidebar;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "design-selection"
+      "design-archives"
+      "zen-resources";
+    grid-area: wrapper;
+  }
+  
+  .design-selection { 
+    grid-area: design-selection;
+    border-radius: 0px 500px 0px 0px; 
+    height: 500px; 
+    align-items: center;
+    }
+  
+  .design-archives { grid-area: design-archives; 
+    border-radius: 0px 0px 500px 0px;
+    height: 500px;
+    align-items: center;
+}
+  
+  .zen-resources { grid-area: zen-resources; }
+  
+}  
