@@ -12,7 +12,93 @@ h1 {
 }
 
 h2 {
-  text-transform: uppercase;
+  padding: 0 1rem;
+}
+
+section > h2::before {
+  /* number before each section title */
+  color: #f68d09;
+}
+
+p {
+  color: #687f53;
+}
+p a {
+  color: #687f53;
+  text-decoration: underline;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #fffbeb;
+  font-family: "Roboto", sans-serif;
+  max-width: 1050px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lobster", cursive;
+}
+
+.preamble,
+.participation,
+.requirements {
+  background: #687f53;
+  text-align: left;
+}
+.preamble h3,
+.participation h3,
+.requirements h3 {
+  color: #fffbeb;
+}
+.preamble p,
+.participation p,
+.requirements p {
+  color: #613a3a;
+}
+
+.explanation,
+.benefits {
+  background: #fffbeb;
+  border: solid #f9af53 0.2rem;
+  text-align: right;
+}
+
+.preamble,
+.participation,
+.requirements,
+.explanation,
+.benefits {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lobster", cursive;
+  color: #de7f08;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+h2 {
   padding: 0 1rem;
 }
 
@@ -37,29 +123,31 @@ p a {
     margin: auto;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+h2,
+h3,
+h4 {
     font-family: "Lobster", cursive;
   }
 
-  .preamble, .participation, .requirements {
-    background: #687f53;
+  .preamble,
+.participation,
+.requirements {
     text-align: left;
   }
-  .preamble h3, .participation h3, .requirements h3 {
-    color: #fffbeb;
-  }
-  .preamble p, .participation p, .requirements p {
-    color: #613a3a;
-  }
 
-  .explanation, .benefits {
+  .explanation,
+.benefits {
     background: #fffbeb;
     border: solid #f9af53 0.2rem;
     text-align: right;
   }
 
-  .preamble, .participation, .requirements,
-.explanation, .benefits {
+  .preamble,
+.participation,
+.requirements,
+.explanation,
+.benefits {
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
@@ -173,41 +261,15 @@ p a {
     grid-area: zen-resources;
   }
 }
-h1,
-h2,
-h3 {
-  font-family: "Lobster", cursive;
-  color: #de7f08;
-}
-
-h1 {
-  margin: 1rem;
-}
-
-h2 {
-  text-transform: uppercase;
-  padding: 0 1rem;
-}
-
-section > h2::before {
-  /* number before each section title */
-  color: #f68d09;
-}
-
-p {
-  color: #687f53;
-}
-p a {
-  color: #687f53;
-  text-decoration: underline;
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 @media only screen and (max-width: 48rem) {
-  body {
-    background: green;
-  }
-
-  h1, h2, h3 {
+  h1,
+h2,
+h3 {
     font-size: 1.5rem;
   }
 

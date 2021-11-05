@@ -1,15 +1,52 @@
-@import 'colors';
-
-*, *::after, *::before {
-	box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 html * {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-	background: $color-2;
+  background: $color-5;
+  font-family: $primary-font;
+  max-width: 1050px;
+  margin: auto;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: $secondary-font;
 }
 
+.preamble,
+.participation,
+.requirements {
+  background: $color-1;
+  text-align: left;
+  h3 {
+    color: $color-5;
+  }
+  p {
+    color: $color-6;
+  }
+}
+.explanation,
+.benefits {
+  background: $color-5;
+  border: solid $color-4 0.2rem;
+  text-align: right;
+}
+
+.preamble,
+.participation,
+.requirements,
+.explanation,
+.benefits {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
