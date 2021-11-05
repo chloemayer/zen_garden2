@@ -1,29 +1,26 @@
 @import "_typography.scss";
 
-<<<<<<< HEAD
-@media only screen and (min-width: 48rem){
 
+@media only screen and (min-width: 48rem) {
 
-  body{
+  body {
     background: $color-5; 
     font-family: $primary-font;
     max-width: 1050px;
-    margin: auto
+    margin: auto;
 }
-=======
-@media only screen and (min-width: 48rem) {
+
   #zen-summary {
     p:first-child {
       padding: 0.5rem;
->>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0
+
 
       &::before {
         top: -3.5rem;
         left: -2rem;
         font-size: 8em;
-      }
+      }}}
 
-<<<<<<< HEAD
 .summary {
   border: solid $color-4 .2rem;
   text-align: center;
@@ -39,8 +36,7 @@
         color: $color-5
     }
     p{
-        color: $color-6
-=======
+        color: $color-6;
       &::after {
         content: "";
         border-top: 2px dotted $color-4;
@@ -49,7 +45,6 @@
         left: 50%;
         transform: translateX(-50%);
       }
->>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0
     }
   }
 
@@ -61,43 +56,23 @@
   .explanation,
   .benefits {
     text-align: right;
-<<<<<<< HEAD
 }
 .summary, .preamble, .participation, .requirements,
 .explanation, .benefits{
    padding: 1rem; 
    margin: 1rem; 
-   border-radius: 1rem;
-   
+   border-radius: 1rem;   
 }
-.wrapper {
-   background-image: url("/zen_garden-main/zen_garden/images/record.png");
-   background-size: 1500px ;
-   background-repeat: no-repeat;
-   background-position: -701px 0px;
-}
-//GRID FORMATTING 
-.page-wrapper {
-=======
-  }
-  .preamble,
-  .participation,
-  .requirements,
-  .explanation,
-  .benefits {
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem;
-  }
+
   .wrapper {
     background-image: url("../../images/record.png");
     background-repeat: no-repeat;
     background-size: 1500px;
     background-position: -701px 0px;
   }
+
   //GRID FORMATTING
   .page-wrapper {
->>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(min-content, max-content);
@@ -210,11 +185,3 @@
     grid-area: zen-resources;
   }
 }
-<<<<<<< HEAD
-  
-  .zen-resources { grid-area: zen-resources; }
-  
-
-}  
-=======
->>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0
