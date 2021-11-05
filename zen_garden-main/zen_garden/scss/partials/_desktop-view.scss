@@ -13,6 +13,13 @@ h1, h2, h3, h4{
     font-family: $secondary-font;
 }
 
+.summary {
+  border: solid $color-4 .2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .preamble, .participation, .requirements{
     background: $color-1; 
@@ -30,15 +37,15 @@ h1, h2, h3, h4{
     border: solid $color-4 .2rem;
     text-align: right;
 }
-.preamble, .participation, .requirements,
+.summary, .preamble, .participation, .requirements,
 .explanation, .benefits{
    padding: 1rem; 
    margin: 1rem; 
-    border-radius: 1rem;
+   border-radius: 1rem;
    
 }
 .wrapper {
-    background-image: url("/zen_garden-main/zen_garden/images/record.png");
+   background-image: url("/zen_garden-main/zen_garden/images/record.png");
    background-size: 1500px ;
    background-repeat: no-repeat;
    background-position: -701px 0px;

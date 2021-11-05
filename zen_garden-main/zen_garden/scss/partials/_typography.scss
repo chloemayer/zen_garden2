@@ -29,8 +29,12 @@ p {
   color: $color-1;
 
   a {
-    color: $color-1;
-    text-decoration: underline;
+    color: $color-2;
+    text-decoration: none;
+  }
+
+  a:first-of-type {
+    color: $color-2;
   }
 
   //@include MQ(S) {

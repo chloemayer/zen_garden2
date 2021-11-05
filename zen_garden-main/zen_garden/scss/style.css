@@ -4,73 +4,68 @@ h1,
 h2,
 h3 {
   font-family: "Lobster", cursive;
-  color: #de7f08;
-}
+  color: #de7f08; }
 
 h1 {
-  margin: 1rem;
-}
+  margin: 1rem; }
 
 h2 {
   text-transform: uppercase;
-  padding: 0 1rem;
-}
+  padding: 0 1rem; }
 
 section > h2::before {
   /* number before each section title */
-  color: #f68d09;
-}
+  color: #f68d09; }
 
 p {
-  color: #687f53;
-}
-p a {
-  color: #687f53;
-  text-decoration: underline;
-}
+  color: #687f53; }
+  p a {
+    color: #c5e1e1;
+    text-decoration: none; }
+  p a:first-of-type {
+    color: #c5e1e1; }
 
 @media only screen and (min-width: 48rem) {
   body {
     background: #fffbeb;
     font-family: "Roboto", sans-serif;
     max-width: 1050px;
-    margin: auto;
-  }
+    margin: auto; }
 
   h1, h2, h3, h4 {
-    font-family: "Lobster", cursive;
-  }
+    font-family: "Lobster", cursive; }
+
+  .summary {
+    border: solid #f9af53 0.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
   .preamble, .participation, .requirements {
     background: #687f53;
-    text-align: left;
-  }
-  .preamble h3, .participation h3, .requirements h3 {
-    color: #fffbeb;
-  }
-  .preamble p, .participation p, .requirements p {
-    color: #613a3a;
-  }
+    text-align: left; }
+    .preamble h3, .participation h3, .requirements h3 {
+      color: #fffbeb; }
+    .preamble p, .participation p, .requirements p {
+      color: #613a3a; }
 
   .explanation, .benefits {
     background: #fffbeb;
     border: solid #f9af53 0.2rem;
-    text-align: right;
-  }
+    text-align: right; }
 
-  .preamble, .participation, .requirements,
-.explanation, .benefits {
+  .summary, .preamble, .participation, .requirements,
+  .explanation, .benefits {
     padding: 1rem;
     margin: 1rem;
-    border-radius: 1rem;
-  }
+    border-radius: 1rem; }
 
   .wrapper {
     background-image: url("/zen_garden-main/zen_garden/images/record.png");
     background-size: 1500px;
     background-repeat: no-repeat;
-    background-position: -701px 0px;
-  }
+    background-position: -701px 0px; }
 
   .page-wrapper {
     display: grid;
@@ -78,8 +73,7 @@ p a {
     grid-auto-rows: minmax(min-content, max-content);
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "intro intro" "sidebar main";
-  }
+    grid-template-areas: "intro intro" "sidebar main"; }
 
   .intro {
     display: grid;
@@ -88,20 +82,16 @@ p a {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "header header" "summary preamble";
-    grid-area: intro;
-  }
+    grid-area: intro; }
 
   .summary {
-    grid-area: summary;
-  }
+    grid-area: summary; }
 
   .preamble {
-    grid-area: preamble;
-  }
+    grid-area: preamble; }
 
   header {
-    grid-area: header;
-  }
+    grid-area: header; }
 
   .main {
     display: grid;
@@ -110,30 +100,24 @@ p a {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "explanation" "participation" "benefits" "requirements" "footer";
-    grid-area: main;
-  }
+    grid-area: main; }
 
   .explanation {
-    grid-area: explanation;
-  }
+    grid-area: explanation; }
 
   .participation {
-    grid-area: participation;
-  }
+    grid-area: participation; }
 
   .benefits {
     grid-area: benefits;
-    margin: 2rem 0px 1rem -31rem;
-  }
+    margin: 2rem 0px 1rem -31rem; }
 
   .requirements {
     grid-area: requirements;
-    margin: 2rem 0px 1rem -31rem;
-  }
+    margin: 2rem 0px 1rem -31rem; }
 
   footer {
-    grid-area: footer;
-  }
+    grid-area: footer; }
 
   .sidebar {
     display: grid;
@@ -142,8 +126,7 @@ p a {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "wrapper";
-    grid-area: sidebar;
-  }
+    grid-area: sidebar; }
 
   .wrapper {
     display: grid;
@@ -152,68 +135,55 @@ p a {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "design-selection" "design-archives" "zen-resources";
-    grid-area: wrapper;
-  }
+    grid-area: wrapper; }
 
   .design-selection {
     grid-area: design-selection;
     border-radius: 0px 500px 0px 0px;
     height: 500px;
-    align-items: center;
-  }
+    align-items: center; }
 
   .design-archives {
     grid-area: design-archives;
     border-radius: 0px 0px 500px 0px;
     height: 500px;
-    align-items: center;
-  }
+    align-items: center; }
 
   .zen-resources {
-    grid-area: zen-resources;
-  }
-}
+    grid-area: zen-resources; } }
 h1,
 h2,
 h3 {
   font-family: "Lobster", cursive;
-  color: #de7f08;
-}
+  color: #de7f08; }
 
 h1 {
-  margin: 1rem;
-}
+  margin: 1rem; }
 
 h2 {
   text-transform: uppercase;
-  padding: 0 1rem;
-}
+  padding: 0 1rem; }
 
 section > h2::before {
   /* number before each section title */
-  color: #f68d09;
-}
+  color: #f68d09; }
 
 p {
-  color: #687f53;
-}
-p a {
-  color: #687f53;
-  text-decoration: underline;
-}
+  color: #687f53; }
+  p a {
+    color: #c5e1e1;
+    text-decoration: none; }
+  p a:first-of-type {
+    color: #c5e1e1; }
 
 @media only screen and (max-width: 48rem) {
   body {
-    background: green;
-  }
+    background: green; }
 
   h1, h2, h3 {
-    font-size: 1.5rem;
-  }
+    font-size: 1.5rem; }
 
   h1 {
-    font-size: 2.4rem;
-  }
-}
+    font-size: 2.4rem; } }
 
 /*# sourceMappingURL=style.css.map */
