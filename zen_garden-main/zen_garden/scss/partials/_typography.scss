@@ -8,15 +8,31 @@ h2,
 h3{
   font-family: $secondary-font;
   color: darken($color-4, 20%);
+  font-size: 1.5rem;
 }
 
 h1 {
   margin: 1rem;
+  font-size: 2.4rem;
 }
 
 h2 {
-  text-transform: uppercase;
   padding: 0 1rem;
+}
+
+// media queries
+@media only screen and (min-width: 48rem) {
+  
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  
+  h1 {
+    font-size: 8rem;
+  }
 }
 
 section > h2::before {

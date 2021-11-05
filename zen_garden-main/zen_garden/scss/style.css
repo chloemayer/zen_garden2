@@ -4,15 +4,22 @@ h1,
 h2,
 h3 {
   font-family: "Lobster", cursive;
-  color: #de7f08; }
+  color: #de7f08;
+  font-size: 1.5rem; }
 
 h1 {
-  margin: 1rem; }
+  margin: 1rem;
+  font-size: 2.4rem; }
 
 h2 {
-  text-transform: uppercase;
   padding: 0 1rem; }
 
+@media only screen and (min-width: 48rem) {
+  h1 {
+    font-size: 6rem; } }
+@media only screen and (min-width: 64rem) {
+  h1 {
+    font-size: 8rem; } }
 section > h2::before {
   /* number before each section title */
   color: #f68d09; }
@@ -155,15 +162,22 @@ h1,
 h2,
 h3 {
   font-family: "Lobster", cursive;
-  color: #de7f08; }
+  color: #de7f08;
+  font-size: 1.5rem; }
 
 h1 {
-  margin: 1rem; }
+  margin: 1rem;
+  font-size: 2.4rem; }
 
 h2 {
-  text-transform: uppercase;
   padding: 0 1rem; }
 
+@media only screen and (min-width: 48rem) {
+  h1 {
+    font-size: 6rem; } }
+@media only screen and (min-width: 64rem) {
+  h1 {
+    font-size: 8rem; } }
 section > h2::before {
   /* number before each section title */
   color: #f68d09; }
@@ -178,12 +192,6 @@ p {
 
 @media only screen and (max-width: 48rem) {
   body {
-    background: green; }
-
-  h1, h2, h3 {
-    font-size: 1.5rem; }
-
-  h1 {
-    font-size: 2.4rem; } }
+    background: green; } }
 
 /*# sourceMappingURL=style.css.map */
