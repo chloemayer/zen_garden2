@@ -159,7 +159,6 @@ p {
     color: #c5e1e1; }
 
 @media only screen and (min-width: 48rem) {
-<<<<<<< HEAD:zen_garden-main/zen_garden/scss/style.css
   body {
     background: #fffbeb;
     font-family: "Roboto", sans-serif;
@@ -186,9 +185,7 @@ p {
     border: solid #f9af53 0.2rem;
     text-align: right; }
 
-  .summary, .preamble, .participation, .requirements,
-  .explanation, .benefits {
-=======
+
   #zen-summary p:first-child {
     padding: 0.5rem;
   }
@@ -206,23 +203,8 @@ p {
     transform: translateX(-50%);
   }
 
-  .preamble,
-.participation,
-.requirements {
-    text-align: left;
-  }
-
-  .explanation,
-.benefits {
-    text-align: right;
-  }
-
-  .preamble,
-.participation,
-.requirements,
-.explanation,
-.benefits {
->>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0:zen_garden-main/zen_garden/style.css
+  .summary, .preamble, .participation, .requirements,
+  .explanation, .benefits {
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem; }
@@ -230,13 +212,9 @@ p {
   .wrapper {
     background-image: url("../../images/record.png");
     background-repeat: no-repeat;
-<<<<<<< HEAD:zen_garden-main/zen_garden/scss/style.css
-    background-position: -701px 0px; }
-=======
     background-size: 1500px;
     background-position: -701px 0px;
   }
->>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0:zen_garden-main/zen_garden/style.css
 
   .page-wrapper {
     display: grid;
@@ -321,7 +299,6 @@ p {
     align-items: center; }
 
   .zen-resources {
-<<<<<<< HEAD:zen_garden-main/zen_garden/scss/style.css
     grid-area: zen-resources; } }
 h1, h3, h4 {
   font-family: "Lobster", cursive;
@@ -363,33 +340,5 @@ p {
 @media only screen and (max-width: 48rem) {
   body {
     background: green; } }
-=======
-    grid-area: zen-resources;
-  }
-}
-body {
-  background: #fffbeb;
-  font-family: "Roboto", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Lobster", cursive;
-}
-
-@media only screen and (max-width: 48rem) {
-  h1,
-h2,
-h3 {
-    font-size: 1.5rem;
-  }
-
-  h1 {
-    font-size: 2.4rem;
-  }
-}
->>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0:zen_garden-main/zen_garden/style.css
 
 /*# sourceMappingURL=style.css.map */
