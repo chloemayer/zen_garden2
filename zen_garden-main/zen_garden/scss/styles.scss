@@ -4,12 +4,11 @@
 @import "partials/basic-style";
 @import "partials/desktop-view";
 
-@media only screen and (max-width: 48rem){
-body {
-  background: $color-5;
-  font-family: $primary-font;
-}
-
+@media only screen and (max-width: 48rem) {
+  body {
+    background: $color-5;
+    font-family: $primary-font;
+  }
 
   h1 {
     font-size: 2.4rem;
