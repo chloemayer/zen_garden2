@@ -1,17 +1,95 @@
-@import 'colors';
-
-*, *::after, *::before {
-	box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 html * {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
 
 body {
-	background: $color-2;
+  max-width: 1050px;
+  margin: auto;
 }
 
+.intro h2 {
+  margin: -1rem 0 2rem;
+}
+
+#zen-summary {
+  margin: 1rem;
+
+  p:first-child {
+    font-style: italic;
+    padding: 0.8rem;
+    position: relative;
+
+    &::before {
+      @include quote(open-quote);
+      top: -2rem;
+      left: -1rem;
+    }
+
+    &::after {
+      @include quote(close-quote);
+      bottom: -4rem;
+      right: 0;
+    }
+  }
+}
+
+.preamble,
+.participation,
+.requirements {
+  background: $color-1;
+  text-align: center;
+  h3 {
+    color: $color-5;
+  }
+  p {
+    color: $color-6;
+  }
+}
+.explanation,
+.benefits {
+  background: $color-5;
+  border: solid $color-4 0.2rem;
+  text-align: center;
+}
+
+.preamble,
+.participation,
+.requirements,
+.explanation,
+.benefits {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+
+  a {
+    text-decoration: none;
+    font-weight: 900;
+    color: darken($color-6, 50%);
+
+    &:hover {
+      color: lighten($color-6, 20%);
+    }
+  }
+}
+
+// aside .wrapper {
+//   background-image: url("../../images/record.png");
+//   background-repeat: no-repeat;
+//   background-size: 100px;
+//   background-position: 0px 0px;
+// }

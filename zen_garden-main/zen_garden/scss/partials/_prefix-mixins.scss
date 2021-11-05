@@ -7,7 +7,7 @@
 }
 
 @mixin transform($options) {
-    -webkit-transform: $options;
+  -webkit-transform: $options;
   -moz-transform: $options;
   -ms-transform: $options;
   -o-transform: $options;
@@ -15,22 +15,29 @@
 }
 
 @mixin transition($options) {
-    -webkit-transition: $options;
+  -webkit-transition: $options;
   -moz-transition: $options;
   transition: $options;
 }
 
 @mixin user-select($options) {
-    -webkit-user-select: $options;
+  -webkit-user-select: $options;
   -moz-user-select: $options;
   -ms-user-select: $options;
   user-select: $options;
 }
 
 @mixin appearance($option) {
-    -webkit-appearance: $option;
+  -webkit-appearance: $option;
   -moz-appearance: $option;
   -ms-appearance: $option;
   -o-appearance: $option;
   appearance: $option;
+}
+
+@mixin quote($type-of-quote) {
+  content: $type-of-quote;
+  color: $color-4;
+  font-size: 5em;
+  position: absolute;
 }

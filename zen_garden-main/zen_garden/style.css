@@ -14,6 +14,130 @@ h1 {
   text-shadow: 3px 3px #c5e1e1, 6px 6px #687f53; }
 
 h2 {
+<<<<<<< HEAD:zen_garden-main/zen_garden/scss/style.css
+=======
+  padding: 0 1rem;
+}
+
+section > h2::before {
+  /* number before each section title */
+  color: #f68d09;
+}
+
+p {
+  color: #687f53;
+}
+p a {
+  color: #687f53;
+  text-decoration: underline;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.intro h2 {
+  margin: -1rem 0 2rem;
+}
+
+#zen-summary {
+  margin: 1rem;
+}
+#zen-summary p:first-child {
+  font-style: italic;
+  padding: 0.8rem;
+  position: relative;
+}
+#zen-summary p:first-child::before {
+  content: open-quote;
+  color: #f9af53;
+  font-size: 5em;
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+}
+#zen-summary p:first-child::after {
+  content: close-quote;
+  color: #f9af53;
+  font-size: 5em;
+  position: absolute;
+  bottom: -4rem;
+  right: 0;
+}
+
+.preamble,
+.participation,
+.requirements {
+  background: #687f53;
+  text-align: center;
+}
+.preamble h3,
+.participation h3,
+.requirements h3 {
+  color: #fffbeb;
+}
+.preamble p,
+.participation p,
+.requirements p {
+  color: #613a3a;
+}
+
+.explanation,
+.benefits {
+  background: #fffbeb;
+  border: solid #f9af53 0.2rem;
+  text-align: center;
+}
+
+.preamble,
+.participation,
+.requirements,
+.explanation,
+.benefits {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+footer a {
+  text-decoration: none;
+  font-weight: 900;
+  color: black;
+}
+footer a:hover {
+  color: #a06161;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lobster", cursive;
+  color: #de7f08;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+h2 {
+>>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0:zen_garden-main/zen_garden/style.css
   padding: 0 1rem;
   color: #de7f08;
   font-size: 2em; }
@@ -38,6 +162,7 @@ p {
     color: #c5e1e1; }
 
 @media only screen and (min-width: 48rem) {
+<<<<<<< HEAD:zen_garden-main/zen_garden/scss/style.css
   body {
     background: #fffbeb;
     font-family: "Roboto", sans-serif;
@@ -66,15 +191,55 @@ p {
 
   .summary, .preamble, .participation, .requirements,
   .explanation, .benefits {
+=======
+  #zen-summary p:first-child {
+    padding: 0.5rem;
+  }
+  #zen-summary p:first-child::before {
+    top: -3.5rem;
+    left: -2rem;
+    font-size: 8em;
+  }
+  #zen-summary p:first-child::after {
+    content: "";
+    border-top: 2px dotted #f9af53;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .preamble,
+.participation,
+.requirements {
+    text-align: left;
+  }
+
+  .explanation,
+.benefits {
+    text-align: right;
+  }
+
+  .preamble,
+.participation,
+.requirements,
+.explanation,
+.benefits {
+>>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0:zen_garden-main/zen_garden/style.css
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem; }
 
   .wrapper {
-    background-image: url("/zen_garden-main/zen_garden/images/record.png");
-    background-size: 1500px;
+    background-image: url("../../images/record.png");
     background-repeat: no-repeat;
+<<<<<<< HEAD:zen_garden-main/zen_garden/scss/style.css
     background-position: -701px 0px; }
+=======
+    background-size: 1500px;
+    background-position: -701px 0px;
+  }
+>>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0:zen_garden-main/zen_garden/style.css
 
   .page-wrapper {
     display: grid;
@@ -159,6 +324,7 @@ p {
     align-items: center; }
 
   .zen-resources {
+<<<<<<< HEAD:zen_garden-main/zen_garden/scss/style.css
     grid-area: zen-resources; } }
 h1, h3, h4 {
   font-family: "Lobster", cursive;
@@ -200,5 +366,33 @@ p {
 @media only screen and (max-width: 48rem) {
   body {
     background: green; } }
+=======
+    grid-area: zen-resources;
+  }
+}
+body {
+  background: #fffbeb;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lobster", cursive;
+}
+
+@media only screen and (max-width: 48rem) {
+  h1,
+h2,
+h3 {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+>>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0:zen_garden-main/zen_garden/style.css
 
 /*# sourceMappingURL=style.css.map */
