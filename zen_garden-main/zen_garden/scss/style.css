@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&display=swap");
+h1, h3, h4 {
+  font-family: "Lobster", cursive;
+  color: #de7f08;
+  font-size: 1.5rem; }
+
+header {
+  text-align: center; }
+
+h1 {
+  margin: 1rem;
+  font-size: 2.4rem;
+  text-shadow: 3px 3px #c5e1e1, 6px 6px #687f53; }
+
+h2 {
+  padding: 0 1rem;
+  color: #de7f08;
+  font-size: 2em; }
+
+@media only screen and (min-width: 48rem) {
+  h1 {
+    font-size: 6rem;
+    text-shadow: 3px 5px #c5e1e1, 8px 10px #687f53; } }
+@media only screen and (min-width: 64rem) {
+  h1 {
+    font-size: 8rem; } }
+section > h2::before {
+  /* number before each section title */
+  color: #f68d09; }
+
+p {
+  color: #687f53; }
+  p a {
+    color: #c5e1e1;
+    text-decoration: none; }
+  p a:first-of-type {
+    color: #c5e1e1; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  max-width: 1050px;
+  margin: auto; }
+
+.intro h2 {
+  margin: -1rem 0 2rem; }
+
+#zen-summary {
+  margin: 1rem; }
+  #zen-summary p:first-child {
+    font-style: italic;
+    padding: 0.8rem;
+    position: relative; }
+    #zen-summary p:first-child::before {
+      content: open-quote;
+      color: #f9af53;
+      font-size: 5em;
+      position: absolute;
+      top: -2rem;
+      left: -1rem; }
+    #zen-summary p:first-child::after {
+      content: close-quote;
+      color: #f9af53;
+      font-size: 5em;
+      position: absolute;
+      bottom: -4rem;
+      right: 0; }
+
+.preamble,
+.participation,
+.requirements {
+  background: #687f53;
+  text-align: center; }
+  .preamble h3,
+  .participation h3,
+  .requirements h3 {
+    color: #fffbeb; }
+  .preamble p,
+  .participation p,
+  .requirements p {
+    color: #613a3a; }
+
+.explanation,
+.benefits {
+  background: #fffbeb;
+  border: solid #f9af53 0.2rem;
+  text-align: center; }
+
+.summary,
+.preamble,
+.participation,
+.requirements,
+.explanation,
+.benefits {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem; }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem; }
+  footer a {
+    text-decoration: none;
+    font-weight: 900;
+    color: black; }
+    footer a:hover {
+      color: #a06161; }
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  right: -14rem;
+  background-image: url("/zen_garden/images/record.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 0px 0px; }
+
+h1, h3, h4 {
+  font-family: "Lobster", cursive;
+  color: #de7f08;
+  font-size: 1.5rem; }
+
+header {
+  text-align: center; }
+
+h1 {
+  margin: 1rem;
+  font-size: 2.4rem;
+  text-shadow: 3px 3px #c5e1e1, 6px 6px #687f53; }
+
+h2 {
+  padding: 0 1rem;
+  color: #de7f08;
+  font-size: 2em; }
+
+@media only screen and (min-width: 48rem) {
+  h1 {
+    font-size: 6rem;
+    text-shadow: 3px 5px #c5e1e1, 8px 10px #687f53; } }
+@media only screen and (min-width: 64rem) {
+  h1 {
+    font-size: 8rem; } }
+section > h2::before {
+  /* number before each section title */
+  color: #f68d09; }
+
+p {
+  color: #687f53; }
+  p a {
+    color: #c5e1e1;
+    text-decoration: none; }
+  p a:first-of-type {
+    color: #c5e1e1; }
+
+@media only screen and (min-width: 48rem) {
+  body {
+    background: #fffbeb;
+    font-family: "Roboto", sans-serif; }
+
+  #zen-summary p:first-child {
+    padding: 0.5rem; }
+    #zen-summary p:first-child::before {
+      top: -3.5rem;
+      left: -2rem;
+      font-size: 8em; }
+
+  .summary {
+    border: solid #f9af53 0.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+  .preamble,
+  .participation,
+  .requirements {
+    text-align: left; }
+    .preamble p::after,
+    .participation p::after,
+    .requirements p::after {
+      content: "";
+      border-top: 2px dotted #f9af53;
+      width: 50%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%); }
+
+  .preamble,
+  .participation,
+  .requirements {
+    text-align: left; }
+
+  .explanation,
+  .benefits {
+    text-align: right; }
+
+  .wrapper {
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position: -701px 0px; }
+
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "intro intro" "sidebar main"; }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "summary preamble";
+    grid-area: intro; }
+
+  .summary {
+    grid-area: summary; }
+
+  .preamble {
+    grid-area: preamble; }
+
+  header {
+    grid-area: header; }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "explanation" "participation" "benefits" "requirements" "footer";
+    grid-area: main; }
+
+  .explanation {
+    grid-area: explanation; }
+
+  .participation {
+    grid-area: participation; }
+
+  .benefits {
+    grid-area: benefits;
+    margin: 2rem 0px 1rem -31rem; }
+
+  .requirements {
+    grid-area: requirements;
+    margin: 2rem 0px 1rem -31rem; }
+
+  footer {
+    grid-area: footer; }
+
+  .sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "wrapper";
+    grid-area: sidebar; }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "design-selection" "design-archives" "zen-resources";
+    grid-area: wrapper; }
+
+  .design-selection {
+    grid-area: design-selection;
+    border-radius: 0px 500px 0px 0px;
+    height: 500px;
+    align-items: center; }
+
+  .design-archives {
+    grid-area: design-archives;
+    border-radius: 0px 0px 500px 0px;
+    height: 500px;
+    align-items: center; }
+
+  .zen-resources {
+    grid-area: zen-resources; } }
+@media only screen and (max-width: 48rem) {
+  body {
+    background: #fffbeb;
+    font-family: "Roboto", sans-serif; }
+
+  h1 {
+    font-size: 2.4rem; } }
+
+/*# sourceMappingURL=style.css.map */
