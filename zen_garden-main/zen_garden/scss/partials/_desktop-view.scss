@@ -1,42 +1,43 @@
 @import "_typography.scss";
 
-
 @media only screen and (min-width: 48rem) {
-
   body {
-    background: $color-5; 
+    background: $color-5;
     font-family: $primary-font;
     max-width: 1050px;
     margin: auto;
-}
+  }
 
   #zen-summary {
     p:first-child {
       padding: 0.5rem;
 
-
       &::before {
         top: -3.5rem;
         left: -2rem;
         font-size: 8em;
-      }}}
-
-.summary {
-  border: solid $color-4 .2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.preamble, .participation, .requirements{
-    background: $color-1; 
-    text-align: left;
-    h3{
-        color: $color-5
+      }
     }
-    p{
-        color: $color-6;
+  }
+
+  .summary {
+    border: solid $color-4 0.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .preamble,
+  .participation,
+  .requirements {
+    background: $color-1;
+    text-align: left;
+    h3 {
+      color: $color-5;
+    }
+    p {
+      color: $color-6;
       &::after {
         content: "";
         border-top: 2px dotted $color-4;
@@ -56,16 +57,20 @@
   .explanation,
   .benefits {
     text-align: right;
-}
-.summary, .preamble, .participation, .requirements,
-.explanation, .benefits{
-   padding: 1rem; 
-   margin: 1rem; 
-   border-radius: 1rem;   
-}
+  }
+  .summary,
+  .preamble,
+  .participation,
+  .requirements,
+  .explanation,
+  .benefits {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
 
   .wrapper {
-    background-image: url("../../images/record.png");
+    background-image: url("/images/record.png");
     background-repeat: no-repeat;
     background-size: 1500px;
     background-position: -701px 0px;
