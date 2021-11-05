@@ -4,7 +4,7 @@
   body {
     background: $color-5;
     font-family: $primary-font;
-}
+  }
 
   #zen-summary {
     p:first-child {
@@ -26,11 +26,12 @@
     justify-content: center;
   }
 
-.preamble, .participation, .requirements{
+  .preamble,
+  .participation,
+  .requirements {
     text-align: left;
 
-    p{
-
+    p {
       &::after {
         content: "";
         border-top: 2px dotted $color-4;
@@ -51,11 +52,11 @@
   .explanation,
   .benefits {
     text-align: right;
-}
-
+  }
 
   .wrapper {
-    background-image: url("/images/record.png");
+    position: static;
+    background-image: url("/zen_garden/images/record.png");
     background-repeat: no-repeat;
     background-size: 1500px;
     background-position: -701px 0px;

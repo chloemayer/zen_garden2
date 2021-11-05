@@ -3,20 +3,36 @@
 h1, h3, h4 {
   font-family: "Lobster", cursive;
   color: #de7f08;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 header {
-  text-align: center; }
+  text-align: center;
+}
 
 h1 {
   margin: 1rem;
   font-size: 2.4rem;
-  text-shadow: 3px 3px #c5e1e1, 6px 6px #687f53; }
+  text-shadow: 3px 3px #c5e1e1, 6px 6px #687f53;
+}
 
 h2 {
   padding: 0 1rem;
+  color: #de7f08;
+  font-size: 2em;
 }
 
+@media only screen and (min-width: 48rem) {
+  h1 {
+    font-size: 6rem;
+    text-shadow: 3px 5px #c5e1e1, 8px 10px #687f53;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  h1 {
+    font-size: 8rem;
+  }
+}
 section > h2::before {
   /* number before each section title */
   color: #f68d09;
@@ -26,8 +42,11 @@ p {
   color: #687f53;
 }
 p a {
-  color: #687f53;
-  text-decoration: underline;
+  color: #c5e1e1;
+  text-decoration: none;
+}
+p a:first-of-type {
+  color: #c5e1e1;
 }
 
 *,
@@ -99,6 +118,7 @@ body {
   text-align: center;
 }
 
+.summary,
 .preamble,
 .participation,
 .requirements,
@@ -123,72 +143,71 @@ footer a:hover {
   color: #a06161;
 }
 
-h1,
-h2,
-h3 {
+.wrapper {
+  position: absolute;
+  top: 0;
+  right: -14rem;
+  background-image: url("/zen_garden/images/record.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 0px 0px;
+}
+
+h1, h3, h4 {
   font-family: "Lobster", cursive;
   color: #de7f08;
+  font-size: 1.5rem;
+}
+
+header {
+  text-align: center;
 }
 
 h1 {
   margin: 1rem;
+  font-size: 2.4rem;
+  text-shadow: 3px 3px #c5e1e1, 6px 6px #687f53;
 }
 
 h2 {
   padding: 0 1rem;
   color: #de7f08;
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 @media only screen and (min-width: 48rem) {
   h1 {
     font-size: 6rem;
-    text-shadow: 3px 5px #c5e1e1, 8px 10px #687f53; } }
+    text-shadow: 3px 5px #c5e1e1, 8px 10px #687f53;
+  }
+}
 @media only screen and (min-width: 64rem) {
   h1 {
-    font-size: 8rem; } }
+    font-size: 8rem;
+  }
+}
 section > h2::before {
   /* number before each section title */
-  color: #f68d09; }
+  color: #f68d09;
+}
 
 p {
-  color: #687f53; }
-  p a {
-    color: #c5e1e1;
-    text-decoration: none; }
-  p a:first-of-type {
-    color: #c5e1e1; }
+  color: #687f53;
+}
+p a {
+  color: #c5e1e1;
+  text-decoration: none;
+}
+p a:first-of-type {
+  color: #c5e1e1;
+}
 
 @media only screen and (min-width: 48rem) {
-<<<<<<< HEAD:zen_garden-main/zen_garden/scss/style.css
   body {
     background: #fffbeb;
     font-family: "Roboto", sans-serif;
-    max-width: 1050px;
-    margin: auto; }
+  }
 
-  .summary {
-    border: solid #f9af53 0.2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-
-  .preamble, .participation, .requirements {
-    background: #687f53;
-    text-align: left; }
-    .preamble h3, .participation h3, .requirements h3 {
-      color: #fffbeb; }
-    .preamble p, .participation p, .requirements p {
-      color: #613a3a; }
-
-  .explanation, .benefits {
-    background: #fffbeb;
-    border: solid #f9af53 0.2rem;
-    text-align: right; }
-
-  .summary, .preamble, .participation, .requirements,
-  .explanation, .benefits {
-=======
   #zen-summary p:first-child {
     padding: 0.5rem;
   }
@@ -197,7 +216,23 @@ p {
     left: -2rem;
     font-size: 8em;
   }
-  #zen-summary p:first-child::after {
+
+  .summary {
+    border: solid #f9af53 0.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .preamble,
+.participation,
+.requirements {
+    text-align: left;
+  }
+  .preamble p::after,
+.participation p::after,
+.requirements p::after {
     content: "";
     border-top: 2px dotted #f9af53;
     width: 50%;
@@ -217,26 +252,13 @@ p {
     text-align: right;
   }
 
-  .preamble,
-.participation,
-.requirements,
-.explanation,
-.benefits {
->>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0:zen_garden-main/zen_garden/style.css
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem; }
-
   .wrapper {
-    background-image: url("../../images/record.png");
+    position: static;
+    background-image: url("/zen_garden/images/record.png");
     background-repeat: no-repeat;
-<<<<<<< HEAD:zen_garden-main/zen_garden/scss/style.css
-    background-position: -701px 0px; }
-=======
     background-size: 1500px;
     background-position: -701px 0px;
   }
->>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0:zen_garden-main/zen_garden/style.css
 
   .page-wrapper {
     display: grid;
@@ -244,7 +266,8 @@ p {
     grid-auto-rows: minmax(min-content, max-content);
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "intro intro" "sidebar main"; }
+    grid-template-areas: "intro intro" "sidebar main";
+  }
 
   .intro {
     display: grid;
@@ -253,16 +276,20 @@ p {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "header header" "summary preamble";
-    grid-area: intro; }
+    grid-area: intro;
+  }
 
   .summary {
-    grid-area: summary; }
+    grid-area: summary;
+  }
 
   .preamble {
-    grid-area: preamble; }
+    grid-area: preamble;
+  }
 
   header {
-    grid-area: header; }
+    grid-area: header;
+  }
 
   .main {
     display: grid;
@@ -271,24 +298,30 @@ p {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "explanation" "participation" "benefits" "requirements" "footer";
-    grid-area: main; }
+    grid-area: main;
+  }
 
   .explanation {
-    grid-area: explanation; }
+    grid-area: explanation;
+  }
 
   .participation {
-    grid-area: participation; }
+    grid-area: participation;
+  }
 
   .benefits {
     grid-area: benefits;
-    margin: 2rem 0px 1rem -31rem; }
+    margin: 2rem 0px 1rem -31rem;
+  }
 
   .requirements {
     grid-area: requirements;
-    margin: 2rem 0px 1rem -31rem; }
+    margin: 2rem 0px 1rem -31rem;
+  }
 
   footer {
-    grid-area: footer; }
+    grid-area: footer;
+  }
 
   .sidebar {
     display: grid;
@@ -297,7 +330,8 @@ p {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "wrapper";
-    grid-area: sidebar; }
+    grid-area: sidebar;
+  }
 
   .wrapper {
     display: grid;
@@ -306,90 +340,36 @@ p {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "design-selection" "design-archives" "zen-resources";
-    grid-area: wrapper; }
+    grid-area: wrapper;
+  }
 
   .design-selection {
     grid-area: design-selection;
     border-radius: 0px 500px 0px 0px;
     height: 500px;
-    align-items: center; }
+    align-items: center;
+  }
 
   .design-archives {
     grid-area: design-archives;
     border-radius: 0px 0px 500px 0px;
     height: 500px;
-    align-items: center; }
+    align-items: center;
+  }
 
   .zen-resources {
-<<<<<<< HEAD:zen_garden-main/zen_garden/scss/style.css
-    grid-area: zen-resources; } }
-h1, h3, h4 {
-  font-family: "Lobster", cursive;
-  color: #de7f08;
-  font-size: 1.5rem; }
-
-header {
-  text-align: center; }
-
-h1 {
-  margin: 1rem;
-  font-size: 2.4rem;
-  text-shadow: 3px 3px #c5e1e1, 6px 6px #687f53; }
-
-h2 {
-  padding: 0 1rem;
-  color: #de7f08;
-  font-size: 2em; }
-
-@media only screen and (min-width: 48rem) {
-  h1 {
-    font-size: 6rem;
-    text-shadow: 3px 5px #c5e1e1, 8px 10px #687f53; } }
-@media only screen and (min-width: 64rem) {
-  h1 {
-    font-size: 8rem; } }
-section > h2::before {
-  /* number before each section title */
-  color: #f68d09; }
-
-p {
-  color: #687f53; }
-  p a {
-    color: #c5e1e1;
-    text-decoration: none; }
-  p a:first-of-type {
-    color: #c5e1e1; }
-
-@media only screen and (max-width: 48rem) {
-  body {
-    background: green; } }
-=======
     grid-area: zen-resources;
   }
 }
-body {
-  background: #fffbeb;
-  font-family: "Roboto", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Lobster", cursive;
-}
-
 @media only screen and (max-width: 48rem) {
-  h1,
-h2,
-h3 {
-    font-size: 1.5rem;
+  body {
+    background: #fffbeb;
+    font-family: "Roboto", sans-serif;
   }
 
   h1 {
     font-size: 2.4rem;
   }
 }
->>>>>>> bea27050e7d26b4ed1fcca03deacc76ba1dc87a0:zen_garden-main/zen_garden/style.css
 
 /*# sourceMappingURL=style.css.map */
