@@ -19,11 +19,6 @@ h1 {
   text-shadow: 3px 3px #c5e1e1, 6px 6px #687f53;
 }
 
-h2 {
-  padding: 0 1rem;
-  color: darken($color-4, 20%);
-  font-size: 2em;
-}
 
 // media queries
 @media only screen and (min-width: 48rem) {
@@ -38,6 +33,13 @@ h2 {
   
   h1 {
     font-size: 8rem;
+  }
+  
+  .intro h2 {
+    margin: 2rem;
+    padding: 0 1rem;
+    color: darken($color-4, 20%);
+    font-size: 2em;
   }
 }
 
