@@ -9,6 +9,13 @@ h1, h3, h4{
   font-size: 1.5rem;
 }
 
+.intro h2 {
+  margin: -1rem 0 2rem;
+  padding: 0 1rem;
+  color: darken($color-4, 20%);
+  font-size: 2em;
+}
+
 header {
   text-align: center;
 }
@@ -27,6 +34,10 @@ h1 {
     font-size: 6rem;
     text-shadow: 3px 5px #c5e1e1, 8px 10px #687f53;
   }
+
+  .intro h2 {
+    margin: 2rem;
+  }
 }
 
 @media only screen and (min-width: 64rem) {
@@ -35,9 +46,7 @@ h1 {
     font-size: 8rem;
   }
   
-  .intro h2 {
-    margin: 2rem;
-  }
+
 }
 
 section > h2::before {
