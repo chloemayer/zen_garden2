@@ -12,6 +12,11 @@ html * {
 body {
   max-width: 1050px;
   margin: auto;
+  overflow-x: hidden;
+}
+
+h1,h2{
+  text-align: left;
 }
 
 .intro h2 {
@@ -88,10 +93,20 @@ footer {
 
 .wrapper {
   position: absolute;
-  top: 0;
+  top: 1rem;
   right: -14rem;
   background-image: url("/zen_garden/images/record.png");
   background-repeat: no-repeat;
   background-size: 100px;
   background-position: 0px 0px;
+
+  &::after {
+    content: "Menu";
+  }
+}
+
+
+.design-selection, .design-archives, .zen-resources{
+ transform: translateX(10rem);
+ overflow: hidden;
 }
