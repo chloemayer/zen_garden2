@@ -208,7 +208,6 @@ p a:first-of-type {
     font-family: "Roboto", sans-serif;
   }
 
-
   #zen-summary p:first-child {
     padding: 0.5rem;
   }
@@ -252,14 +251,8 @@ p a:first-of-type {
 .benefits {
     text-align: right;
   }
-  .summary, .preamble, .participation, .requirements,
-  .explanation, .benefits {
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem; }
 
   .wrapper {
-    position: static;
     background-image: url("/zen_garden/images/record.png");
     background-repeat: no-repeat;
     background-size: 1500px;
@@ -317,12 +310,12 @@ p a:first-of-type {
 
   .benefits {
     grid-area: benefits;
-    margin: 2rem 0px 1rem -31rem;
+    margin: 2rem 1rem 1rem -98%;
   }
 
   .requirements {
     grid-area: requirements;
-    margin: 2rem 0px 1rem -31rem;
+    margin: 2rem 1rem 1rem -98%;
   }
 
   footer {
@@ -347,19 +340,18 @@ p a:first-of-type {
     grid-auto-flow: row;
     grid-template-areas: "design-selection" "design-archives" "zen-resources";
     grid-area: wrapper;
+    position: static;
   }
 
   .design-selection {
     grid-area: design-selection;
     border-radius: 0px 500px 0px 0px;
-    height: 500px;
     align-items: center;
   }
 
   .design-archives {
     grid-area: design-archives;
     border-radius: 0px 0px 500px 0px;
-    height: 500px;
     align-items: center;
   }
 
@@ -372,51 +364,6 @@ p a:first-of-type {
     background: #fffbeb;
     font-family: "Roboto", sans-serif;
   }
-
-  h1 {
-    font-size: 2.4rem;
-  }
 }
-    grid-area: zen-resources; } }
-h1, h3, h4 {
-  font-family: "Lobster", cursive;
-  color: #de7f08;
-  font-size: 1.5rem; }
-
-header {
-  text-align: center; }
-
-h1 {
-  margin: 1rem;
-  font-size: 2.4rem;
-  text-shadow: 3px 3px #c5e1e1, 6px 6px #687f53; }
-
-h2 {
-  padding: 0 1rem;
-  color: #de7f08;
-  font-size: 2em; }
-
-@media only screen and (min-width: 48rem) {
-  h1 {
-    font-size: 6rem;
-    text-shadow: 3px 5px #c5e1e1, 8px 10px #687f53; } }
-@media only screen and (min-width: 64rem) {
-  h1 {
-    font-size: 8rem; } }
-section > h2::before {
-  /* number before each section title */
-  color: #f68d09; }
-
-p {
-  color: #687f53; }
-  p a {
-    color: #c5e1e1;
-    text-decoration: none; }
-  p a:first-of-type {
-    color: #c5e1e1; }
-
-@media only screen and (max-width: 48rem) {
-  body {
-    background: green; } }
 
 /*# sourceMappingURL=style.css.map */
