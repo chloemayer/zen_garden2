@@ -3,10 +3,10 @@
 $primary-font: "Roboto", sans-serif;
 $secondary-font: "Lobster", cursive;
 
-h1, h3, h4{
+h3, h4{
   font-family: $secondary-font;
   color: darken($color-4, 20%);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .intro h2 {
@@ -24,6 +24,8 @@ h1 {
   margin: 1rem;
   font-size: 3rem;
   text-shadow: 3px 3px #c5e1e1, 6px 6px #687f53;
+  font-family: $secondary-font;
+  color: darken($color-4, 20%);
 }
 
 
@@ -62,12 +64,14 @@ p {
     text-decoration: none;
   }
 
-  a:first-of-type {
-    color: $color-2;
-  }
-
   //@include MQ(S) {
   //font-size: 1.6rem;
   //line-height: 1.6;
   //}
+}
+
+footer {
+  a {
+    color: darken($color-4, 15%);
+  }
 }
