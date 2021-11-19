@@ -92,13 +92,53 @@ footer {
   background-size: 100px;
   background-position: 0px 0px;
 
-  &::after {
-    content: "Menu";
+  &:hover {
+    transform: translateX(-15rem);
+    transition: transform 1s ease-in;
+    @include MQ(XS) {
+      transform: translateX(-22rem);
+      transition: transform 1s ease-in;
+    }
   }
 }
 
+.design-selection,
+.design-archives,
+.zen-resources {
+  transform: translateX(9rem);
+  overflow: hidden;
+  transition: transform 1s ease-in;
+  margin-left: -2rem;
+  padding: 1rem;
+  background: $color-1;
 
-.design-selection, .design-archives, .zen-resources{
- transform: translateX(10rem);
- overflow: hidden;
+  h3 {
+    margin-bottom: -0.5rem;
+  }
+
+  li {
+    list-style: none;
+    // padding-right: 1.5rem;
+    margin-left: -1.5rem;
+    padding-right: 1rem;
+    color: $color-5;
+    line-height: 1.5;
+
+    a {
+      text-decoration: none;
+      color: $color-5;
+
+      &:hover {
+        color: darken($color-5, 20%);
+      }
+    }
+  }
+}
+
+span {
+  &.indicator {
+    font-size: 2rem;
+    position: relative;
+    top: 0.25rem;
+  }
 }
