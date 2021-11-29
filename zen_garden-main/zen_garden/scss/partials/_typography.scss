@@ -5,7 +5,7 @@ $secondary-font: "Lobster", cursive;
 
 h3, h4{
   font-family: $secondary-font;
-  color: darken($color-3, 20%);
+  color: $color-1;
   font-size: 2rem;
 }
 
@@ -75,7 +75,7 @@ p {
   color: $color-1;
 
   a {
-    color: darken($color-3, 20%);
+    color: #D43900;
     text-decoration: none;
     font-weight: bold;
   }
