@@ -1,30 +1,29 @@
 @import "_typography.scss";
 
+
+
 @media only screen and (min-width: 48rem) {
   body {
-    background: $color-5;
+    background: #FFFFFF;
     font-family: $primary-font;
   }
 
   #zen-summary {
     p:first-child {
-      padding: 0.5rem;
+      padding: 1.5rem;
 
       &::before {
-        top: -3.5rem;
-        left: -2rem;
+        top: -5rem;
+        left: -3.5rem;
         font-size: 8em;
       }
     }
   }
 
-  .summary {
-    border: solid $color-4 0.2rem;
+  .summary * {
+    // border: solid $color-4 0.2rem;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
+    font-size: 1.5rem;
   }
 
   .preamble,
@@ -42,12 +41,6 @@
         transform: translateX(-50%);
       }
     }
-  }
-
-  .preamble,
-  .participation,
-  .requirements {
-    text-align: left;
   }
 
   .explanation,
@@ -132,6 +125,23 @@
   .requirements {
     grid-area: requirements;
     margin: 2rem 1rem 1rem -98%;
+    column-count: 2;
+    column-width: 300px;
+    column-gap: 30px;
+    h3 {
+      column-span: all;
+    }
+
+  }
+
+  @media only screen and (min-width: 64rem) {
+    .requirements  {
+      column-count: 3;
+      column-width: 200px;
+    }
+
+
+    
   }
 
   footer {
@@ -181,4 +191,4 @@
     grid-area: zen-resources;
   }
 }
-// background-image: url("/images/record.png");
+

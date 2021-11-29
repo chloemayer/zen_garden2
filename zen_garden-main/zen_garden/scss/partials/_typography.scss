@@ -1,19 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
 
 $primary-font: "Roboto", sans-serif;
 $secondary-font: "Lobster", cursive;
 
 h3, h4{
   font-family: $secondary-font;
-  color: darken($color-4, 20%);
+  color: darken($color-3, 20%);
   font-size: 2rem;
 }
 
 .intro h2 {
   margin: 1rem 0 2rem;
   padding: 0 1rem;
-  color: darken($color-4, 20%);
+  color: darken($color-3, 20%);
   font-size: 1.5rem;
+}
+
+abbr[title] {
+  text-decoration: none;
 }
 
 header {
@@ -23,9 +27,13 @@ header {
 h1 {
   margin: 1rem;
   font-size: 3rem;
-  text-shadow: 3px 3px #c5e1e1, 6px 6px #687f53;
   font-family: $secondary-font;
-  color: darken($color-4, 20%);
+  color: $color-5;
+  text-shadow: 3px 3px $color-8, 6px 6px $color-2, 9px 9px $color-1;
+}
+
+p {
+  font-size: 1rem;
 }
 
 
@@ -34,7 +42,11 @@ h1 {
   
   h1 {
     font-size: 6rem;
-    text-shadow: 3px 5px #c5e1e1, 8px 10px #687f53;
+    text-shadow: 5px 5px $color-8, 10px 10px $color-8, 15px 15px $color-2, 20px 20px #98C2C2, 25px 25px $color-1;
+  }
+
+  h3 {
+    font-size: 2.5rem;
   }
 
   .intro h2 {
@@ -47,7 +59,10 @@ h1 {
   h1 {
     font-size: 8rem;
   }
-  
+
+  p {
+    line-height: 150%;
+  }
 
 }
 
@@ -60,8 +75,9 @@ p {
   color: $color-1;
 
   a {
-    color: $color-2;
+    color: darken($color-3, 20%);
     text-decoration: none;
+    font-weight: bold;
   }
 
   //@include MQ(S) {
@@ -72,6 +88,7 @@ p {
 
 footer {
   a {
-    color: darken($color-4, 15%);
+    color: $color-5;
+    font-weight: bold;
   }
 }
