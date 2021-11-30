@@ -11,19 +11,26 @@
   #zen-summary {
     p:first-child {
       padding: 1.5rem;
-
+      line-height: 200%;
+      
       &::before {
-        top: -5rem;
+        top: 3rem;
         left: -3.5rem;
         font-size: 8em;
       }
+
+      &::after {
+        bottom: -1rem;
+      }
+    }
+    p:nth-child(2) {
+      font-size: 1rem;
     }
   }
 
   .summary * {
-    // border: solid $color-4 0.2rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .preamble,
@@ -72,7 +79,7 @@
 
   .intro {
     display: grid;
-    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(min-content, max-content);
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -84,6 +91,8 @@
 
   .summary {
     grid-area: summary;
+    align-self: center;
+    padding: 2rem 6rem;
   }
 
   .preamble {

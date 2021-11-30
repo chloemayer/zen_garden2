@@ -13,7 +13,10 @@
 
 }
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 48rem) {
+  body {
+    max-width: 1200px;
+  }
 
 }
 

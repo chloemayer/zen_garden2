@@ -29,7 +29,7 @@ h1 {
   font-size: 3rem;
   font-family: $secondary-font;
   color: $color-5;
-  text-shadow: 3px 3px $color-8, 6px 6px $color-2, 9px 9px $color-1;
+  text-shadow: 3px 3px $color-8, 6px 6px $color-2, 9px 9px $color-1, 15px 15px #EBEBEB;
 }
 
 p {
@@ -42,7 +42,7 @@ p {
   
   h1 {
     font-size: 6rem;
-    text-shadow: 5px 5px $color-8, 10px 10px $color-8, 15px 15px $color-2, 20px 20px #98C2C2, 25px 25px $color-1;
+    text-shadow: 5px 5px $color-8, 10px 10px $color-8, 15px 15px $color-2, 20px 20px #98C2C2, 25px 25px $color-1, 35px 35px #EBEBEB;
   }
 
   h3 {
@@ -86,9 +86,13 @@ p {
   //}
 }
 
+.requirements p {
+  font-size: .8rem;
+}
+
 footer {
   a {
-    color: $color-5;
+    color: $color-1;
     font-weight: bold;
   }
 }
