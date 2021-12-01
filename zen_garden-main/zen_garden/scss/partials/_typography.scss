@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
 
+@mixin textshadows {
+  $color-abc: #0F5959; // Darkest Blue
+  $color-2: #106262; // 
+  $color-3: #6BA2A2; //
+  $color-4: #c5e1e1; // Light Blue
+  $color-5: #F98F4E; //
+  $color-6: #F99C62; // Tangerine
+}
 $primary-font: "Roboto", sans-serif;
 $secondary-font: "Lobster", cursive;
 
@@ -29,7 +37,7 @@ h1 {
   font-size: 3rem;
   font-family: $secondary-font;
   color: #F86308;
-  text-shadow: 3px 3px $color-8, 6px 6px $color-2, 9px 9px $color-1, 15px 15px #EBEBEB;
+  animation: lobster 3s infinite alternate-reverse;
 }
 
 p {
@@ -42,7 +50,6 @@ p {
   
   h1 {
     font-size: 6rem;
-    text-shadow: 5px 5px $color-3, 10px 10px $color-2, 15px 15px $color-1, 25px 25px #EBEBEB;
   }
 
   h3 {

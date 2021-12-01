@@ -1,9 +1,11 @@
 @import "partials/colors";
-@import "partials/typography";
+
 @import "partials/prefix-mixins";
 @import "partials/layout";
 @import "partials/basic-style";
 @import "partials/desktop-view";
+@import "partials/animations";
+@import "partials/typography";
 
 @media only screen and (max-width: 48rem) {
   body {
