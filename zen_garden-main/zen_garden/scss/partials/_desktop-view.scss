@@ -10,8 +10,8 @@
 
 
   #zen-summary {
+    margin: 2rem;
     p:first-child {
-      padding: 1.5rem;
       line-height: 200%;
       
       &::before {
@@ -29,9 +29,13 @@
     }
   }
 
-  .summary * {
+
+  .summary {
+    grid-area: summary;
+    align-self: center;
+    padding: 1rem 2rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .preamble,
@@ -87,14 +91,6 @@
     }
   }
 
-
-
-  .summary {
-    grid-area: summary;
-    align-self: center;
-    padding: 2rem 6rem;
-  }
-
   .preamble {
     grid-area: preamble;
   }
@@ -136,34 +132,38 @@
 
   .benefits {
     grid-area: benefits;
-    margin: 2rem 1rem 1rem -98%;
+    // margin: 2rem 1rem 1rem -98%;
   }
 
   .requirements {
+    width: 100%;
     grid-area: requirements;
-    margin: 2rem 1rem 1rem -98%;
     column-count: 2;
-    column-width: 300px;
+    column-width: 250px;
     column-gap: 30px;
-    max-width: 60rem;
+    padding: 6rem;
     justify-self: center;
+    background-color: lighten($color-4, 5%);
     h3 {
       column-span: all;
+      margin-top: 0;
     }
-    &::after {
+    & p:first-of-type {
+      margin-top: 0;
+    }
+   /* &::after {
       content: '';
       height: 100px;
       width: 100px;
       background-color: $color-4;
-
     }
-
+    */
   }
 
   footer {
     align-items: flex-end;
     grid-area: footer;
-    margin: 0 0 0 -100%;
+    // margin: 0 0 0 -100%;
 
   }
 
@@ -180,7 +180,7 @@
   .wrapper {
     background-image: none;
     position: absolute;
-  overflow: hidden;
+    overflow: hidden;
     &::before{
       content: "";
       position: absolute;
@@ -245,6 +245,25 @@
   .requirements  {
     column-count: 3;
     column-width: 200px;
+  }
+
+  #zen-summary {
+    p:first-child {
+      padding: 0 4rem 1rem 4rem;
+      
+      &::before {
+        top: 2rem;
+        left: 0rem;
+      }
+
+      &::after {
+        right: 3rem;
+      }
+    }
+  }
+
+  .summary * {
+    font-size: 1.2rem;
   }
   
 }
