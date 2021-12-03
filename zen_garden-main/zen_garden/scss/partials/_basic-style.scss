@@ -12,7 +12,6 @@ html * {
 body {
   margin: auto;
   overflow-x: hidden;
-
 }
 
 #zen-summary {
@@ -51,7 +50,6 @@ body {
   // background: $color-3;
   // border: solid $color-4 0.2rem;
   text-align: center;
-
 }
 
 .summary,
@@ -86,7 +84,7 @@ footer {
 }
 
 .wrapper {
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: -14rem;
   background-image: url("images/record.png");
@@ -157,4 +155,3 @@ span {
     top: 0.25rem;
   }
 }
-
