@@ -121,54 +121,6 @@ footer {
   transition: transform 1s ease-in;
   margin-left: -2rem;
   padding: 1rem;
-  background: $color-1;
-
-  h3 {
-    margin-bottom: -0.5rem;
-    color: $color-5;
-  }
-
-  li {
-    list-style: none;
-    // padding-right: 1.5rem;
-    margin-left: -1.5rem;
-    padding-right: 1rem;
-    color: $color-6;
-    line-height: 1.5;
-
-    a {
-      text-decoration: none;
-      color: $color-6;
-
-      &:hover {
-        color: darken($color-6, 20%);
-      }
-    }
-  }
-
-  @include MQ(S) {
-    background-color: transparent;
-  }
-}
-
-span {
-  &.indicator {
-    font-size: 2rem;
-    position: relative;
-    top: 0.25rem;
-  }
-}
-
-
-/*
-.design-selection,
-.design-archives,
-.zen-resources {
-  transform: translateX(9rem);
-  overflow: hidden;
-  transition: transform 1s ease-in;
-  margin-left: -2rem;
-  padding: 1rem;
   background: lighten($color-4, 5%);
 
   h3 {
@@ -192,4 +144,17 @@ span {
       }
     }
   }
-  */
+
+  @include MQ(S) {
+    background-color: transparent;
+  }
+}
+
+span {
+  &.indicator {
+    font-size: 2rem;
+    position: relative;
+    top: 0.25rem;
+  }
+}
+
