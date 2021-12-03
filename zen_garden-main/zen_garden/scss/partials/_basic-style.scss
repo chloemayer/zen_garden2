@@ -12,12 +12,12 @@ html * {
 body {
   margin: auto;
   overflow-x: hidden;
-
 }
 
 #zen-summary {
   margin: 1rem;
 
+  @include underline;
   p:first-child {
     font-style: italic;
     padding: 0.8rem;
@@ -40,7 +40,7 @@ body {
 .preamble,
 .participation,
 .requirements {
-  // background: lighten($color-4, 5%);
+  @include underline;
   text-align: center;
   p {
     color: $color-1;
@@ -51,7 +51,6 @@ body {
   // background: $color-3;
   // border: solid $color-4 0.2rem;
   text-align: center;
-
 }
 
 .summary,
@@ -78,15 +77,14 @@ footer {
     text-decoration: none;
     font-weight: 900;
     color: darken($color-4, 15%);
-
-    &:hover {
-      color: $color-3;
-    }
+    transition: color 0.5s;
   }
+
+  @include underline;
 }
 
 .wrapper {
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: -14rem;
   background-image: url("images/record.png");
@@ -157,4 +155,3 @@ span {
     top: 0.25rem;
   }
 }
-
