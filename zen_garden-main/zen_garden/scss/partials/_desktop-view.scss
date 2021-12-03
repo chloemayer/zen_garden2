@@ -142,7 +142,6 @@
     column-gap: 30px;
     padding: 6rem;
     justify-self: center;
-    margin-left: -100%;
     
     h3 {
       column-span: all;
@@ -151,13 +150,19 @@
     & p:first-of-type {
       margin-top: 0;
     }
-   
+   /* &::after {
+      content: '';
+      height: 100px;
+      width: 100px;
+      background-color: $color-4;
+    }
+    */
   }
 
   footer {
     align-items: flex-end;
     grid-area: footer;
-    margin: 0 0 0 -100%;
+    // margin: 0 0 0 -100%;
 
   }
 
@@ -207,7 +212,7 @@
     grid-area: wrapper;
     position: static;
     padding-top: 5rem;
-    width: 100%;
+    width: 50%;
     &:hover{
       //transform: scale(1.01) translateX(0px);
       //transition: transform .3s ease-in-out;
