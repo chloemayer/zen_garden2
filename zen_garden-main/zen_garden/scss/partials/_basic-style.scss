@@ -57,12 +57,16 @@ body {
 .summary,
 .preamble,
 .participation,
-.requirements,
 .explanation,
 .benefits {
   padding: 1rem;
   margin: 1rem;
-  // border-radius: 1rem;
+}
+
+.requirements {
+  background-color: lighten($color-4, 5%);
+  padding: 2rem;
+  margin: 0;
 }
 
 footer {

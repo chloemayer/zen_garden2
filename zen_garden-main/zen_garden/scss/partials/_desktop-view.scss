@@ -33,9 +33,11 @@
   .summary {
     grid-area: summary;
     align-self: center;
-    padding: 1rem 2rem;
+    padding: 4rem 4rem;
     text-align: center;
     font-size: 1rem;
+    background-color: lighten($color-2, 5%);
+    margin: 0;
   }
 
   .preamble,
@@ -83,12 +85,6 @@
       "summary preamble";
     grid-area: intro;
 
-    &::after {
-      content: '';
-      height: 150px;
-      grid-column: 1 / 3;
-      background-color: lighten($color-2, 5%);
-    }
   }
 
   .preamble {
@@ -99,11 +95,6 @@
     grid-area: header;
     h1 {
       padding: 25px 0px;
-    }
-    h2 {
-      position: absolute;
-      top: 730px;
-      left: 420px;
     }
   }
 
@@ -124,10 +115,18 @@
 
   .explanation {
     grid-area: explanation;
+
   }
 
   .participation {
     grid-area: participation;
+    &::before {
+      content: '';
+      height: 150px;
+      width: 100%;
+      grid-column: 1 / 3;
+      background-color: lighten($color-2, 5%);
+    }
   }
 
   .benefits {
@@ -143,7 +142,7 @@
     column-gap: 30px;
     padding: 6rem;
     justify-self: center;
-    background-color: lighten($color-4, 5%);
+    
     h3 {
       column-span: all;
       margin-top: 0;
