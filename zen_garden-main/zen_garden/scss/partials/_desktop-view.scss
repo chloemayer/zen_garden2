@@ -141,6 +141,7 @@
     column-gap: 30px;
     padding: 6rem;
     justify-self: center;
+    margin-left: -100%;
     
     h3 {
       column-span: all;
@@ -161,7 +162,7 @@
   footer {
     align-items: flex-end;
     grid-area: footer;
-    // margin: 0 0 0 -100%;
+    margin: 0 0 0 -100%;
 
   }
 
@@ -210,8 +211,8 @@
       "zen-resources";
     grid-area: wrapper;
     position: static;
-    padding-top: 5rem;
-    width: 50%;
+    margin-top: 5rem;
+    width: 100%;
     &:hover{
       //transform: scale(1.01) translateX(0px);
       //transition: transform .3s ease-in-out;
