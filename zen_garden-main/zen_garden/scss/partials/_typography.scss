@@ -3,33 +3,31 @@
 $primary-font: "Roboto", sans-serif;
 $secondary-font: "Lobster", cursive;
 
-h3, h4{
-  font-family: $secondary-font;
-  color: $color-1;
-  font-size: 2rem;
+body {
+  font-family: $primary-font;
 }
 
-.intro h2 {
-  margin: 1rem 0 2rem;
-  padding: 0 1rem;
+h1 {
+  font-size: 3rem;
+  font-family: $secondary-font;
+  color: #F86308;
+  animation: lobster 3.5s infinite alternate-reverse linear;
+}
+
+h2 {
   color: darken($color-3, 20%);
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 abbr[title] {
   text-decoration: none;
 }
 
-header {
-  text-align: center;
-}
-
-h1 {
-  margin: 1rem;
-  font-size: 3rem;
+h3, h4{
   font-family: $secondary-font;
-  color: #F86308;
-  animation: lobster 3.5s infinite alternate-reverse linear;
+  color: $color-1;
+  //text-shadow: 5px 7px #EBEBEB;
+  font-size: 2rem;
 }
 
 p {
@@ -42,6 +40,13 @@ p {
   
   h1 {
     font-size: 6rem;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
   }
 
   h3 {
