@@ -34,6 +34,10 @@ p {
   font-size: 1rem;
 }
 
+div#zen-summary.summary * {
+  color: white;
+}
+
 
 // media queries
 @media only screen and (min-width: 48rem) {
