@@ -19,7 +19,7 @@
   }
 
   #zen-summary {
-   // margin: 2rem;
+    margin: 0;
     p:first-child {
       line-height: 200%;
       
@@ -34,31 +34,43 @@
       }
     }
     p:nth-child(2) {
-      font-size: 1rem;
+      grid-area: sum;
+      position: absolute;
+      top: 430px;
+      left: 0px;
+      padding: 50px;
+      width: 1200px;
+      margin: auto 0;
+      background-color: lighten($color-2, 5%);
     }
   }
 
   .summary {
     grid-area: summary;
-    align-self: center;
     padding: 4rem 4rem;
     text-align: center;
     font-size: 1rem;
+    display: flex;
+    position: relative;
     background-image: url("images/test-bkgd.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    max-height: 365px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
     // background-color: lighten($color-2, 5%);
     // border: 4px solid #F86308;
-    // border-radius: 10px;
-    margin: auto;
+    // border-radius: 10px;  
   }
+
+
 
   .preamble,
   .participation,
   .requirements {
     text-align: left;
+
 
     p {
       &::after {
@@ -97,7 +109,8 @@
     grid-auto-flow: row;
     grid-template-areas:
       "header header"
-      "summary preamble";
+      "summary preamble"
+      "sum sum"; 
     grid-area: intro;
 
   }
@@ -113,21 +126,20 @@
   .main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(350px, max-content);
+    grid-auto-rows: repeat(minmax(350px, fit-content) 100px);
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "explanation"
       "participation"
-      "benefits"
       "requirements"
+      "benefits"
       "footer";
     grid-area: main;
   }
 
   .explanation {
     grid-area: explanation;
-
   }
 
   .participation {
@@ -143,18 +155,43 @@
 
   .benefits {
     grid-area: benefits;
-    margin: 2rem 1rem 1rem -98%;
+    // margin: 2rem 0;
+    padding: 6rem;
+    width: 100%;
+    position: relative;
+    h3 {
+      margin-top: 0;
+    }
+    &::before {
+      content: '';
+      height: 460px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: $color-4;
+      left: -600px;
+      top: 0px;
+    }
   }
+
+
 
   .requirements {
     grid-area: requirements;
     column-count: 2;
     column-width: 250px;
-    column-gap: 30px;
-    padding: 6rem;
+    column-gap: 2rem;
+    padding: 5rem 5rem 9rem;
     justify-self: center;
-    margin-left: -100%;
-    
+    margin-left: -97%;
+    // margin-top: 3rem;
+    // margin-bottom: 3rem;
+    background-image: url("images/test-bkgd.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
     h3 {
       column-span: all;
       margin-top: 0;
@@ -162,6 +199,13 @@
     & p:first-of-type {
       margin-top: 0;
     }
+    & p:last-child {
+      position: absolute;
+      top: 400px;
+      width: 85%;
+      left: 95px;
+    }
+
    /* &::after {
       content: '';
       height: 100px;
@@ -175,7 +219,8 @@
     align-items: flex-end;
     grid-area: footer;
     margin: 0 0 0 -100%;
-
+    height: 200px;
+    padding: 1.5rem;
   }
 
   .sidebar {
@@ -223,7 +268,7 @@
       "zen-resources";
     grid-area: wrapper;
     position: static;
-    margin-top: 5rem;
+    // margin-top: 5rem;
     width: 100%;
     &:hover{
       transform: scale(1.01);
@@ -280,3 +325,9 @@
   
 }
 
+@media only screen and (min-width: 75rem) {
+.requirements {
+  margin-left: -100%;
+  margin-right: inherit;
+}
+}

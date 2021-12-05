@@ -34,8 +34,27 @@ p {
   font-size: 1rem;
 }
 
-div#zen-summary.summary * {
-  color: white;
+.summary p:first-child {
+  color: $color-4;
+}
+
+.summary p:last-child {
+  font-size: 3rem;
+  font-family: $secondary-font;
+}
+
+.requirements {
+  p {
+  color: $color-4;
+  font-size: 2rem;
+  &:last-child {
+    font-size: 1.6rem;
+    font-family: $secondary-font;
+  }
+}
+  h3 {
+    color: $color-4;
+  }
 }
 
 
