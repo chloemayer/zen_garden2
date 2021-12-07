@@ -1,8 +1,13 @@
 // breakpoints
-$XS: 31rem;
-$S: 48rem;
-$M: 64rem;
-$L: 100rem;
+$XS: 29rem; //450px
+$midS: 38rem; //609px
+$S: 48rem; //768px
+$midM: 56rem; //896px
+$M: 64rem; //1024px
+$midL: 70rem; //1120px
+$L: 75rem; //1200px
+$midLX: 88rem; //1408px
+$XL: 100rem; //1600px
 
 // media queries
 
@@ -11,17 +16,36 @@ $L: 100rem;
     @media only screen and (min-width: $XS) {
       @content;
     }
-  }
-  @if $canvas == S {
+  } @else if $canvas == midS {
+    @media only screen and (min-width: $midS) {
+      @content;
+    }
+  } @else if $canvas == S {
     @media only screen and (min-width: $S) {
+      @content;
+    }
+  } @else if $canvas == midM {
+    @media only screen and (min-width: $midM) {
       @content;
     }
   } @else if $canvas == M {
     @media only screen and (min-width: $M) {
       @content;
     }
+  } @else if $canvas == midL {
+    @media only screen and (min-width: $midL) {
+      @content;
+    }
   } @else if $canvas == L {
     @media only screen and (min-width: $L) {
+      @content;
+    }
+  } @else if $canvas == midXL {
+    @media only screen and (min-width: $midXL) {
+      @content;
+    }
+  } @else if $canvas == XL {
+    @media only screen and (min-width: $XL) {
       @content;
     }
   }

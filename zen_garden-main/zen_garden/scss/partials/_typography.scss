@@ -11,12 +11,14 @@ h1 {
   font-size: 3rem;
   font-family: $secondary-font;
   color: #F86308;
+  margin-top: 0;
   animation: lobster 3.5s infinite alternate-reverse linear;
 }
 
 h2 {
   color: darken($color-3, 20%);
   font-size: 1rem;
+  // text-align: center;
 }
 
 abbr[title] {
@@ -32,30 +34,12 @@ h3, h4{
 
 p {
   font-size: 1rem;
+  // @include MQ(M) {
+  //   font-size: 1.2rem;
+  // }
 }
 
-.summary p:first-child {
-  color: $color-4;
-}
 
-.summary p:last-child {
-  font-size: 3rem;
-  font-family: $secondary-font;
-}
-
-.requirements {
-  p {
-  color: $color-4;
-  font-size: 2rem;
-  &:last-child {
-    font-size: 1.6rem;
-    font-family: $secondary-font;
-  }
-}
-  h3 {
-    color: $color-4;
-  }
-}
 
 
 // media queries
@@ -67,7 +51,7 @@ p {
   }
 
   h2 {
-    margin: 0;
+    margin: 2;
     padding: 0;
     font-size: 1.5rem;
   }
@@ -76,8 +60,46 @@ p {
     font-size: 2.5rem;
   }
 
-  .intro h2 {
-    margin: 2rem;
+  .summary p:first-child {
+    color: $color-4;
+    font-size: 1.2rem;
+  }
+  
+  .summary p:last-child {
+    font-size: 3rem;
+    font-family: $secondary-font;
+  }
+
+  .requirements {
+    p {
+    color: $color-4;
+    font-size: 2rem;
+    &:last-child {
+      font-size: 1.6rem;
+      font-family: $secondary-font;
+    }
+  }
+    h3 {
+      color: $color-4;
+    }
+  }
+
+  p {
+    line-height: 150%;
+  }
+
+  .design-selection,
+  .design-archives,
+  .zen-resources {
+    h3 {
+      color: darken($color-3, 20%);
+    }
+    li, li a {
+      color: $color-3;
+    }
+    li a:hover {
+      color: $color-4;
+    }
   }
 }
 
@@ -88,7 +110,7 @@ p {
   }
 
   p {
-    line-height: 150%;
+    line-height: 175%;
   }
 
 }
@@ -100,17 +122,11 @@ section > h2::before {
 
 p {
   color: $color-1;
-
   a {
     color: darken($color-3, 20%);
     text-decoration: none;
     font-weight: bold;
   }
-
-  //@include MQ(S) {
-  //font-size: 1.6rem;
-  //line-height: 1.6;
-  //}
 }
 
 .requirements p {
