@@ -14,9 +14,8 @@ body {
   overflow-x: hidden;
 }
 
-  
+header {
 @include MQ(XS) {
-  header {
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem 1rem 2rem;
