@@ -244,26 +244,40 @@ body {
   }
   .wrapper {
     background-image: none;
-    position: relative;
+    position: fixed;
     overflow: visible;
     &::before{
       content: "";
-      position: absolute;
+      position: relative;
+      top: -80rem;
+      right: 18%;
       z-index: -100;
-      background: url("images/record.png") 0 0 repeat ;
-      width: 100%;
-      height: 100%;
+      background: url("images/record.svg") 0 0 repeat ;
+      width: 78rem;
+      height: 78rem;
       background-repeat: no-repeat;
-      background-size: 75rem;      
+      //@include MQ(L) {
+      animation: rotation 20s linear infinite; 
+      //}
     }
       &::after {
         display: none;
       }
   }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+      transform-origin: 50% 50% ;
+    }
+    to {
+      transform: rotate(359deg);
+      transform-origin: 50% 50% ;
+    }
+  }
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:25rem 30rem 30rem;
+    grid-template-rows:15rem 20rem 30rem;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -271,27 +285,22 @@ body {
       "design-selection"
       "zen-resources";
     grid-area: wrapper;
-    position: static;
-    margin-top: 5rem;
+    position: relative;
+    margin-top: 15rem;
     margin-left: -37.5rem;
-    width: 1200px;
+
     height: 100%;
+    
     &:hover{
       transform: scale(1.005);
       transition: transform .3s ;
-      cursor: pointer;
-    }
-    &:active{
       &:before{
-      transform: rotate(45deg);
-      transition:transform .5s ;
-      transform-origin: 50% 23% ;
-      width: 100%;
-      height: 100%;
-
-
+      animation-play-state: paused;
+      cursor: pointer;
       }
     }
+ 
+    
     
     
   }
@@ -300,21 +309,21 @@ body {
     grid-area: design-selection;
     align-items: center;
     transform: translate(13rem, 0rem);
-    margin-left: 37.5rem; 
+    margin-left: 30%; 
   }
 
   .design-archives {
     grid-area: design-archives;
     transform: translate(8rem, -1rem);
     align-items: center;
-    margin-left: 37.5rem;
+    margin-left: 30%;
     margin-top: 4rem;
   }
 
   .zen-resources {
     grid-area: zen-resources;
     transform: translate(8rem, -1rem);
-    margin-left: 37.5rem; 
+    margin-left: 30%; 
   }
 }
 
