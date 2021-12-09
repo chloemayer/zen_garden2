@@ -14,19 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-.intro::before {
-  @include MQ(midS) {
-    @include stripe-basic;
-    background-color: darken($color-3, 20%); 
-    top: 280px;
-    $delay: 1s;
-    @include animation($delay);
-    @include MQ(S) {
-      top: 350px;
-    }
-  }
-}
-
 
 header {
   @include MQ(midS) {
@@ -37,7 +24,7 @@ header {
     @include stripe-basic;
     background-color: $color-3; 
     top: 275px;
-    $delay: 1.1s;
+    $delay: 300ms;
     @include animation($delay);
     @include MQ(S) {
       top: 345px;
@@ -47,7 +34,7 @@ header {
     @include stripe-basic;
     background-color: $color-4; 
     top: 270px;
-    $delay: 1.2s;
+    $delay: 400ms;
     @include animation($delay);
     @include MQ(S) {
       top: 340px;
@@ -63,7 +50,7 @@ h1 {
       @include stripe-basic;
       background-color: $color-7; 
       top: 265px;
-      $delay: 1.3s;
+      $delay: 500ms;
       @include animation($delay);
       @include MQ(S) {
         top: 335px;
@@ -73,7 +60,7 @@ h1 {
       @include stripe-basic;
       background-color: $color-2; 
       top: 260px;
-      $delay: 1.4s;
+      $delay: 600ms;
       @include animation($delay);
       @include MQ(S) {
         top: 330px;
@@ -88,7 +75,7 @@ h2 {
       @include stripe-basic;
       background-color: #6BA2A2;  ////// (chloe fix this)
       top: 255px;
-      $delay: 1.5s;
+      $delay: 700ms;
       @include animation($delay);
       @include MQ(S) {
         top: 325px;
@@ -98,7 +85,7 @@ h2 {
       @include stripe-basic;
       background-color: $color-1; 
       top: 250px;
-      $delay: 1.6s;
+      $delay: 800ms;
       @include animation($delay);
       @include MQ(S) {
         top: 320px;
@@ -111,6 +98,17 @@ h2 {
 #zen-summary {
   margin: 1rem;
 
+  &::before {
+    @include MQ(midS) {
+      @include stripe-basic;
+      background-color: darken($color-3, 20%); 
+      top: 280px;
+      $delay: 200ms;
+      @include animation($delay);
+      @include MQ(S) {
+        top: 350px;
+      }
+    }
   @include underline;
   p:first-child {
     font-style: italic;
@@ -129,6 +127,7 @@ h2 {
       right: 0;
     }
   }
+}
 }
 
 .preamble,

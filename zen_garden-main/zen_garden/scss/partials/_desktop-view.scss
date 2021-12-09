@@ -115,6 +115,18 @@ body {
       grid-area: header;
   }
 }
+  
+
+  header:hover::before, 
+  header:hover::after,
+  header:hover h1::before,
+  header:hover h1::after,
+  header:hover h2::before,
+  header:hover h2::after,
+  header:hover + div#zen-summary::before {
+    width: 100%;
+    @include headhover;
+  }
 
   .main {
     display: grid;

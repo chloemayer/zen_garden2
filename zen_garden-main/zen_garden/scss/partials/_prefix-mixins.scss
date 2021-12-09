@@ -85,6 +85,16 @@
   animation-delay: $delay + 200ms;
   animation-duration: $timing;
   animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  // animation: stripe $timing linear;
+  animation-fill-mode: both;
+  animation-direction: normal; 
+}
+
+
+@mixin headhover {
+  $timing: 1.5s;
+  animation-name: headerhover;
+  animation-duration: $timing;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-direction: normal; 
 }

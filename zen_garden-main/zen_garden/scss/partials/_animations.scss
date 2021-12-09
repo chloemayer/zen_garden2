@@ -15,61 +15,13 @@
   100% { width: 100%; }
 }
 
-
-    // @keyframes stripe {
-    //   0% { width: 0%; }
-    //   10% { width: 10%; }
-    //   20% { width: 20%; }
-    //   30% { width: 30%; }
-    //   40% { width: 40%; }
-    //   50% { width: 50%; }
-    //   60% { width: 60%; }
-    //   70% { width: 70%; }
-    //   80% { width: 80%; }
-    //   90% { width: 90%; }
-    //   100% { width: 100%; }
-    // }
-
-    // @keyframes stripe {
-    //   0% { width: 0%; }
-    //   10% { width: 10%; }
-    //   20% { width: 20%; }
-    //   30% { width: 30%; }
-    //   40% { width: 40%; }
-    //   50% { width: 50%; }
-    //   60% { width: 60%; }
-    //   70% { width: 70%; }
-    //   80% { width: 80%; }
-    //   90% { width: 90%; }
-    //   100% { width: 100%; }
-    // }
-
-// @keyframes stripe {
-//   0% { width: 0%; }
-//   20% { width: 25%; }
-//   40% { width: 50%; }
-//   60% { width: 75%; }
-//   80% { width: 100%; }
-//   100% { width: 100%; }
-// }
-
-// @keyframes stripe2 {
-//   0% { width: 0%; }
-//   20% { width: 0%; }
-//   40% { width: 25%; }
-//   60% { width: 50%; }
-//   80% { width: 75%; }
-//   100% { width: 100%; }
-// }
-
-// @keyframes stripe3 {
-//   0% { width: 0%; }
-//   20% { width: 0%; }
-//   40% { width: 0%; }
-//   60% { width: 25%; }
-//   80% { width: 38%; }
-//   100% { width: 100%; }
-// }
+@keyframes headerhover {
+  0% { width: 100%; }
+  25% { width: 75%; }
+  50% { width: 50%; }
+  75% { width: 25%; }
+  100% { width: 0%; }
+}
 
 
 @keyframes lobster {
