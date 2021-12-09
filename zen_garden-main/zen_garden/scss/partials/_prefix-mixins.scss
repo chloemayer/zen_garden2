@@ -71,7 +71,20 @@
   }
 }
 
-@mixin animation {
-  $timing: 1s;
-  animation: stripe $timing linear;
+@mixin stripe-basic {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 0%;
+  left: 0;
+}
+
+@mixin animation($delay) {
+  $timing: 1.5s;
+  animation-name: stripe;
+  animation-delay: $delay + 200ms;
+  animation-duration: $timing;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  // animation: stripe $timing linear;
 }

@@ -15,111 +15,97 @@ body {
 }
 
 .intro::before {
-    content: '';
-    position: absolute;
+  @include MQ(midS) {
+    @include stripe-basic;
     background-color: darken($color-3, 20%); 
-    height: 5px;
-    width: 100%;
     top: 280px;
-    left: 0;
-    @include animation;
+    $delay: 1s;
+    @include animation($delay);
     @include MQ(S) {
       top: 350px;
     }
+  }
 }
 
 
 header {
+  @include MQ(midS) {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 1rem 2rem;
   &:before {
-    content: '';
+    @include stripe-basic;
     background-color: $color-3; 
-    height: 5px;
-    position: absolute;
-    width: 100%;
     top: 275px;
-    left: 0;
-    @include animation;
+    $delay: 1.1s;
+    @include animation($delay);
     @include MQ(S) {
       top: 345px;
     }
   }
   &:after {
-    content: '';
+    @include stripe-basic;
     background-color: $color-4; 
-    height: 5px;
-    position: absolute;
-    width: 100%;
     top: 270px;
-    left: 0;
-    @include animation;
+    $delay: 1.2s;
+    @include animation($delay);
     @include MQ(S) {
       top: 340px;
     }
   }
-  @include MQ(XS) {
-      display: flex;
-      flex-direction: column;
-      padding: 2rem 2rem 1rem 2rem;
-      h1 {
-        padding: 0px;
-        &:before {
-          content: '';
-          background-color: $color-7; 
-          height: 5px;
-          position: absolute;
-          width: 100%;
-          top: 265px;
-          left: 0;
-          @include animation;
-          @include MQ(S) {
-            top: 335px;
-          }
-        }
-        &::after {
-          content: '';
-          background-color: $color-2; 
-          height: 5px;
-          position: absolute;
-          width: 100%;
-          top: 260px;
-          left: 0;
-          @include animation;
-          @include MQ(S) {
-            top: 330px;
-          }
-        }
+  }
+}
+  
+h1 {
+  @include MQ(midS) {
+    padding: 0px;
+    &:before {
+      @include stripe-basic;
+      background-color: $color-7; 
+      top: 265px;
+      $delay: 1.3s;
+      @include animation($delay);
+      @include MQ(S) {
+        top: 335px;
       }
-      h2 {
-        align-self: flex-end;
-        &::before {
-          content: '';
-          background-color: #6BA2A2;  ////// (chloe fix this)
-          height: 5px;
-          position: absolute;
-          width: 100%;
-          top: 255px;
-          left: 0;
-          @include animation;
-          @include MQ(S) {
-            top: 325px;
-          }
     }
-        &::after {
-          content: '';
-          background-color: $color-1; 
-          height: 5px;
-          position: absolute;
-          width: 100%;
-          top: 250px;
-          left: 0;
-          @include animation;
-          @include MQ(S) {
-            top: 320px;
-          }
-        } 
+    &::after {
+      @include stripe-basic;
+      background-color: $color-2; 
+      top: 260px;
+      $delay: 1.4s;
+      @include animation($delay);
+      @include MQ(S) {
+        top: 330px;
       }
     }
   }
+}
+h2 {
+  @include MQ(midS) {
+    align-self: flex-end;
+    &::before {
+      @include stripe-basic;
+      background-color: #6BA2A2;  ////// (chloe fix this)
+      top: 255px;
+      $delay: 1.5s;
+      @include animation($delay);
+      @include MQ(S) {
+        top: 325px;
+      }
+      }
+    &::after {
+      @include stripe-basic;
+      background-color: $color-1; 
+      top: 250px;
+      $delay: 1.6s;
+      @include animation($delay);
+      @include MQ(S) {
+        top: 320px;
+      }
+    } 
+  }
+}
   
 
 #zen-summary {
