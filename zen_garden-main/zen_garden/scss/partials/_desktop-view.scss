@@ -332,6 +332,8 @@ body {
   .requirements  {
     column-count: 3;
     column-width: 200px;
+    width: 100vmax; 
+    max-width: fit-content;
   }
 
   #zen-summary {
