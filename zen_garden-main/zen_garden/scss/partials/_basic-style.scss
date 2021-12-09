@@ -14,19 +14,112 @@ body {
   overflow-x: hidden;
 }
 
-header {
-@include MQ(XS) {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 2rem 1rem 2rem;
-    h1 {
-      padding: 0px;
+.intro::before {
+    content: '';
+    position: absolute;
+    background-color: darken($color-3, 20%); 
+    height: 5px;
+    width: 100%;
+    top: 280px;
+    left: 0;
+    @include animation;
+    @include MQ(S) {
+      top: 350px;
     }
-    h2 {
-      align-self: flex-end;
+}
+
+
+header {
+  &:before {
+    content: '';
+    background-color: $color-3; 
+    height: 5px;
+    position: absolute;
+    width: 100%;
+    top: 275px;
+    left: 0;
+    @include animation;
+    @include MQ(S) {
+      top: 345px;
     }
   }
-}
+  &:after {
+    content: '';
+    background-color: $color-4; 
+    height: 5px;
+    position: absolute;
+    width: 100%;
+    top: 270px;
+    left: 0;
+    @include animation;
+    @include MQ(S) {
+      top: 340px;
+    }
+  }
+  @include MQ(XS) {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 2rem 1rem 2rem;
+      h1 {
+        padding: 0px;
+        &:before {
+          content: '';
+          background-color: $color-7; 
+          height: 5px;
+          position: absolute;
+          width: 100%;
+          top: 265px;
+          left: 0;
+          @include animation;
+          @include MQ(S) {
+            top: 335px;
+          }
+        }
+        &::after {
+          content: '';
+          background-color: $color-2; 
+          height: 5px;
+          position: absolute;
+          width: 100%;
+          top: 260px;
+          left: 0;
+          @include animation;
+          @include MQ(S) {
+            top: 330px;
+          }
+        }
+      }
+      h2 {
+        align-self: flex-end;
+        &::before {
+          content: '';
+          background-color: #6BA2A2;  ////// (chloe fix this)
+          height: 5px;
+          position: absolute;
+          width: 100%;
+          top: 255px;
+          left: 0;
+          @include animation;
+          @include MQ(S) {
+            top: 325px;
+          }
+    }
+        &::after {
+          content: '';
+          background-color: $color-1; 
+          height: 5px;
+          position: absolute;
+          width: 100%;
+          top: 250px;
+          left: 0;
+          @include animation;
+          @include MQ(S) {
+            top: 320px;
+          }
+        } 
+      }
+    }
+  }
   
 
 #zen-summary {

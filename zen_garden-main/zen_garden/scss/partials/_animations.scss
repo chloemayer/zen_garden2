@@ -7,8 +7,15 @@
     $color-f: #F99C62; // Tangerine
 
 
+@keyframes stripe {
+  0% { width: 0%; }
+  25% { width: 25%; }
+  50% { width: 50%; }
+  75% { width: 75%; }
+  100% { width: 100%; }
+}
 
-  @keyframes lobster {
+@keyframes lobster {
   
   0% {text-shadow: 1px 1px $color-a, 2px 2px $color-a, 3px 3px $color-f, 4px 4px $color-f, 5px 5px $color-e, 6px 6px $color-e, 7px 7px $color-d, 8px 8px $color-d, 9px 9px $color-c, 10px 10px $color-c, 11px 11px $color-b, 12px 12px $color-b, 25px 25px #EBEBEB; }
   

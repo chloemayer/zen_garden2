@@ -70,3 +70,8 @@
     }
   }
 }
+
+@mixin animation {
+  $timing: 1s;
+  animation: stripe $timing linear;
+}
