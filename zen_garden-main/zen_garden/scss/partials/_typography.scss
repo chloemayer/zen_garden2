@@ -93,6 +93,15 @@ section > h2::before {
     font-size: 3rem;
   }
 }
+.summary{
+  p{
+    a{
+      @include MQ(M){
+        font-size: 3rem;
+        }
+    }
+  }
+}
 
 .design-selection,
 .design-archives,
