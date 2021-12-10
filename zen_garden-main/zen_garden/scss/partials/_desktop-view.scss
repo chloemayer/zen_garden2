@@ -372,7 +372,7 @@ body {
   margin-right: inherit;
 }
 }
-@media only screen and (max-width: 75rem) {
+@media only screen and (min-width: 48rem) {
   .requirements, footer{
     margin-left: -44rem;
   }
