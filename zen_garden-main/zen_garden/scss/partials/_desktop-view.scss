@@ -182,7 +182,6 @@ body {
       grid-area: header;
   }
 }
-  
 
   header:hover::before, 
   header:hover::after,
@@ -291,12 +290,8 @@ body {
   footer {
     align-items: flex-end;
     grid-area: footer;
-    margin: 0 1rem 0 -97%;
     height: 200px;
     padding: 1.5rem;
-    @include MQ(L) {
-      margin: 0 0 0 -117%;
-    }
   }
 
   .sidebar {
