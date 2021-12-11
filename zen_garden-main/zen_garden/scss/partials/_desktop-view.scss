@@ -161,34 +161,27 @@ body {
 
   .benefits {
     grid-area: benefits;
-    margin: 0;
     margin-left: -100%;
-    padding: 2rem;
-    width: 100%;
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 4rem 2rem;
     h3 {
       margin-top: 0;
     }
   }
 
-  .benefits::before {
-    content: '';
-    width: 95%;
-    height: 100%;
-    position: absolute;
-    background-color: lighten($color-4, 5%);
-    right: -100%;
-    top: 0px;
-    margin: 0 1rem;
-    @include MQ(L) {
-      width: 100%;
-      margin: 0;
-    }
-  }
+  // .benefits::before {
+  //   content: '';
+  //   width: 95%;
+  //   height: 100%;
+  //   position: absolute;
+  //   background-color: lighten($color-4, 5%);
+  //   right: -100%;
+  //   top: 0px;
+  //   margin: 0 1rem;
+  //   @include MQ(L) {
+  //     width: 100%;
+  //     margin: 0;
+  //   }
+  // }
 
 
   .requirements {
@@ -199,8 +192,6 @@ body {
     column-gap: 2rem;
     padding: 5rem 5rem 9rem;
     justify-self: center;
-    // margin-top: 3rem;
-    // margin-bottom: 3rem;
     background-image: url("images/test-bkgd.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -354,6 +345,20 @@ body {
   }
 }
 
+@media only screen and (min-width: 48rem) {
+  .requirements, footer{
+    margin-left: -32.6rem;
+    margin-right: 0;
+  }
+  }
+
+@media only screen and (min-width: 56rem) {
+  .requirements, footer{
+    margin-left: -36rem;
+  }
+
+}
+
 @media only screen and (min-width: 64rem) {
   .requirements  {
     column-count: 3;
@@ -381,17 +386,8 @@ body {
   .summary * {
     font-size: 1.2rem;
   }
+
   
 }
 
-@media only screen and (min-width: 75rem) {
-.requirements, footer{
-  margin-left: -44rem;
-  //PREVIOUS column-right: inherit; 
-}
-}
-@media only screen and (min-width: 48rem) {
-  .requirements, footer{
-    margin-left: -44rem;
-  }
-  }
+
