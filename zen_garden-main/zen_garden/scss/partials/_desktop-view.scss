@@ -159,18 +159,25 @@ body {
   }
 
   .intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr .5fr .5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "header header"
-      "summary preamble"
-      "sum sum"; 
-    grid-area: intro;
-    position: relative;
-
+    @include MQ(S) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: .8fr .5fr .3fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "header header"
+        "summary preamble"
+        "sum sum"; 
+      grid-area: intro;
+      position: relative;
+    }
+    @include MQ(M) {
+      grid-auto-rows: 1fr .5fr .35fr;
+    }
+    @include MQ(L) {
+      grid-auto-rows: 1fr .5fr .5fr;
+    }
   }
 
   .preamble {
@@ -216,14 +223,30 @@ body {
   .participation {
     grid-area: participation;
     position: relative;
-  }
+}
 
   .benefits {
-    grid-area: benefits;
-    margin-left: -100%;
-    padding: 3rem 2rem 2rem;
-    h3 {
-      margin-top: 0;
+    @include MQ(S) {
+      grid-area: benefits;
+      margin-left: -32.5rem;
+      margin-right: 0;
+      padding: 2rem;
+      h3 {
+        margin-top: 0;
+      }
+    }
+    @include MQ(midM) {
+      margin-left: -32.5rem;
+      padding: 3rem 2rem 2rem;
+    }
+    @include MQ(M) {
+      margin-left: -40.5rem;
+    }
+    @include MQ(L) {
+      margin-left: 0;
+      margin-bottom: 0;
+      padding: 3.5rem 2rem;
+      background-color: lighten($color-4, 5%);
     }
   }
 
@@ -257,7 +280,9 @@ body {
     background-size: cover;
     position: relative;
     height: 100%;
-
+    @include MQ(L) {
+      margin-top: 0;
+    }
     h3 {
       column-span: all;
       margin-top: 0;
@@ -384,24 +409,46 @@ body {
   }
 
   .design-selection {
-    grid-area: design-selection;
-    align-items: center;
-    transform: translate(13rem, 0rem);
-    margin-left: 30%; 
+    @include MQ(S) {
+      grid-area: design-selection;
+      align-items: center;
+      transform: translate(13rem, 0rem);
+      margin-left: 25%; 
+      margin-top: -5rem;
+    }
+    @include MQ(midM) {
+      margin-left: 30%;
+      margin-top: 0; 
+    }
+
   }
 
   .design-archives {
-    grid-area: design-archives;
-    transform: translate(8rem, -1rem);
-    align-items: center;
-    margin-left: 30%;
-    margin-top: 4rem;
+    @include MQ(S) {
+      grid-area: design-archives;
+      transform: translate(8rem, -1rem);
+      align-items: center;
+      margin-left: 25%;
+      margin-top: -1rem;
+    }
+    @include MQ(midM) {
+      margin-left: 30%;
+      margin-top: 4rem;
+    }
   }
 
   .zen-resources {
-    grid-area: zen-resources;
-    transform: translate(8rem, -1rem);
-    margin-left: 30%; 
+
+    @include MQ(S) {
+      grid-area: zen-resources;
+      transform: translate(8rem, -1rem);
+      margin-left: 25%;
+      margin-top: -5rem; 
+    }
+    @include MQ(midM) {
+      margin-left: 30%;
+      margin-top: 0; 
+    }
   }
 }
 
