@@ -97,7 +97,6 @@ h2 {
 
 #zen-summary {
   margin: 1rem;
-
   &::before {
     @include MQ(midS) {
       @include stripe-basic;
@@ -109,6 +108,7 @@ h2 {
         top: 350px;
       }
     }
+  }
   @include underline;
   p:first-child {
     font-style: italic;
@@ -127,7 +127,6 @@ h2 {
       right: 0;
     }
   }
-}
 }
 
 .preamble,

@@ -261,6 +261,10 @@ body {
     background-image: none;
     position: fixed;
     overflow: visible;
+    @include MQ(S) {
+      width: 70rem;
+      height: 70rem;
+    }
     &::before{
       content: "";
       position: relative;
