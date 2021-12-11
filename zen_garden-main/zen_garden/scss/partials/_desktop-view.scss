@@ -6,6 +6,87 @@ body {
   }
 }
 
+// .summary::after {
+//   @include MQ(S) { 
+//     @include stripe-basic;
+//     width: 15%;
+//     left: 6%;
+//     top: 10%;
+//     background-color: $color-7; 
+//     }
+// }
+
+
+.summary p:nth-child(2) {
+    @include MQ(S) { 
+      grid-area: sum;
+      position: absolute;
+      top: 0px; 
+      left: 0px;
+      padding: 2rem; // padding: 2.5rem 3.5rem 2.5rem 2rem;
+      // text-align: right;
+      width: 100%;
+      margin: auto 0;
+      background-color: lighten($color-2, 5%);
+    }
+    // &::before {
+    //   @include MQ(S) {
+    //   @include stripe-basic;
+    //   width: 15%;
+    //   left: 6%;
+    //   top: 50%;
+    //   background-color: $color-7; 
+    //   }
+    // }
+    // &::after {
+    //   @include MQ(S) {
+    //   @include stripe-basic;
+    //   width: 15.5%;
+    //   left: 6%;
+    //   top: 55%;
+    //   background-color: $color-4; 
+    //   }
+    // }
+    // a {
+    //     &::before {
+    //       @include MQ(S) {
+    //       @include stripe-basic;
+    //       width: 16rem;
+    //       left: 4rem;
+    //       top: 5.6rem;
+    //       background-color: $color-3; 
+    //       }
+    //     }
+    //     &::after {
+    //       @include MQ(S) {
+    //       @include stripe-basic;
+    //       width: 16rem;
+    //       left: 4rem;
+    //       top: 5.6rem;
+    //       background-color: darken($color-3, 20%); 
+    //     }
+    //   }
+    // }
+    // a:link, a:visited {
+      
+    // }
+  }
+
+.requirements, footer{
+  @include MQ(S) {
+    margin-left: -32.6rem;
+    margin-right: 0;
+  }
+  @include MQ(midM) {
+    margin-left: -36rem;
+  }
+  @include MQ(M) {
+    margin-left: -40.5rem;
+  }
+}
+
+
+
 @media only screen and (min-width: 48rem) {
 
   #zen-summary {
@@ -24,18 +105,6 @@ body {
         right: 1rem;
       }
     }
-    p:nth-child(2) {
-      @include MQ(S) { 
-        grid-area: sum;
-        position: absolute;
-        top: 0px; 
-        left: 0px;
-        padding: 40px;
-        width: 100%;
-        margin: auto 0;
-        background-color: lighten($color-2, 5%);
-      }
-    }
   }
 
   .summary {
@@ -50,9 +119,6 @@ body {
     width: 100%;
     height: 100%;
     align-items: center;
-    // background-color: lighten($color-2, 5%);
-    // border: 4px solid #F86308;
-    // border-radius: 10px;  
   }
 
 
@@ -138,8 +204,8 @@ body {
     grid-template-areas:
       "explanation"
       "participation"
-      "requirements"
       "benefits"
+      "requirements"
       "footer";
     grid-area: main;
   }
@@ -156,7 +222,7 @@ body {
   .benefits {
     grid-area: benefits;
     margin-left: -100%;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem 2rem;
     h3 {
       margin-top: 0;
     }
@@ -320,10 +386,6 @@ body {
       cursor: pointer;
       }
     }
- 
-    
-    
-    
   }
 
   .design-selection {
@@ -348,26 +410,12 @@ body {
   }
 }
 
-@media only screen and (min-width: 48rem) {
-  .requirements, footer{
-    margin-left: -32.6rem;
-    margin-right: 0;
-  }
-  }
-
-@media only screen and (min-width: 56rem) {
-  .requirements, footer{
-    margin-left: -36rem;
-  }
-
-}
 
 @media only screen and (min-width: 64rem) {
   .requirements  {
     column-count: 3;
     //PREVIOUS column-width:200px;
     column-width: auto;
-    
     max-width: fit-content;
   }
 
@@ -389,10 +437,6 @@ body {
   .summary * {
     font-size: 1.2rem;
   }
-
-    .requirements, footer{
-      margin-left: -40.5rem;
-    }
 }
 
 

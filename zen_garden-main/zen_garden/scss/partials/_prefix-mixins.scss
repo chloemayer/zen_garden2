@@ -43,7 +43,7 @@
 }
 
 @mixin underline {
-  a {
+  a:link, a:hover {
     position: relative;
 
     &::after {
@@ -54,7 +54,6 @@
       left: 0;
       bottom: -2px;
       background: linear-gradient(90deg, $color-2, $color-5);
-
       transform: scaleX(0);
       transform-origin: right;
       transition: transform 0.2s ease-in;
@@ -71,13 +70,21 @@
   }
 }
 
-@mixin stripe-basic {
+@mixin header-stripe {
   content: '';
   position: absolute;
   height: 5px;
   width: 0%;
   left: 0;
 }
+
+@mixin stripe-basic {
+  content: '';
+  position: absolute;
+  height: 5px;
+}
+
+
 
 @mixin animation($delay) {
   $timing: 1.5s;

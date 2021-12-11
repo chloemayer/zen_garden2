@@ -21,7 +21,7 @@ header {
     flex-direction: column;
     padding: 2rem 2rem 1rem 2rem;
   &:before {
-    @include stripe-basic;
+    @include header-stripe;
     background-color: $color-3; 
     top: 275px;
     $delay: 300ms;
@@ -31,7 +31,7 @@ header {
     }
   }
   &:after {
-    @include stripe-basic;
+    @include header-stripe;
     background-color: $color-4; 
     top: 270px;
     $delay: 400ms;
@@ -47,7 +47,7 @@ h1 {
   @include MQ(midS) {
     padding: 0px;
     &:before {
-      @include stripe-basic;
+      @include header-stripe;
       background-color: $color-7; 
       top: 265px;
       $delay: 500ms;
@@ -57,7 +57,7 @@ h1 {
       }
     }
     &::after {
-      @include stripe-basic;
+      @include header-stripe;
       background-color: $color-2; 
       top: 260px;
       $delay: 600ms;
@@ -72,7 +72,7 @@ h2 {
   @include MQ(midS) {
     align-self: flex-end;
     &::before {
-      @include stripe-basic;
+      @include header-stripe;
       background-color: #6BA2A2;  ////// (chloe fix this)
       top: 255px;
       $delay: 700ms;
@@ -82,7 +82,7 @@ h2 {
       }
       }
     &::after {
-      @include stripe-basic;
+      @include header-stripe;
       background-color: $color-1; 
       top: 250px;
       $delay: 800ms;
@@ -99,7 +99,7 @@ h2 {
   margin: 1rem;
   &::before {
     @include MQ(midS) {
-      @include stripe-basic;
+      @include header-stripe;
       background-color: darken($color-3, 20%); 
       top: 280px;
       $delay: 200ms;
