@@ -15,12 +15,13 @@ body {
       
       &::before {
         top: 3rem;
-        left: -3.5rem;
+        left: -4rem;
         font-size: 8em;
       }
 
       &::after {
         bottom: -1rem;
+        right: 1rem;
       }
     }
     p:nth-child(2) {
@@ -193,7 +194,8 @@ body {
   .requirements {
     grid-area: requirements;
     column-count: 2;
-    column-width: 250px;
+    //PREVIOUS column-width: 250px
+    column-width: auto;
     column-gap: 2rem;
     padding: 5rem 5rem 9rem;
     justify-self: center;
@@ -217,6 +219,8 @@ body {
 
     .requirements p:last-child {
       position: absolute;
+      //PREVIOUS- remove bottom property
+      bottom: 1rem;
       width: 100%;
       left: 0px;
       padding: 2rem 5rem;
@@ -258,6 +262,19 @@ body {
     background-image: none;
     position: fixed;
     overflow: visible;
+    @include MQ(S) {
+      width: 70rem;
+      height: 70rem;
+    }
+    @include MQ(midM) {
+      width: 73rem;
+      height: 73rem;
+    }
+    @include MQ(M) {
+      width: 78rem;
+      height: 78rem;
+    }
+
     &::before{
       content: "";
       position: relative;
@@ -349,8 +366,9 @@ body {
 @media only screen and (min-width: 64rem) {
   .requirements  {
     column-count: 3;
-    column-width: 200px;
-    width: 100vmax; 
+    //PREVIOUS column-width:200px;
+    column-width: auto;
+    
     max-width: fit-content;
   }
 
@@ -360,7 +378,7 @@ body {
       
       &::before {
         top: 2rem;
-        left: 0rem;
+        left: -1rem;
       }
 
       &::after {
@@ -378,7 +396,7 @@ body {
 @media only screen and (min-width: 75rem) {
 .requirements, footer{
   margin-left: -44rem;
-  margin-right: inherit;
+  //PREVIOUS column-right: inherit; 
 }
 }
 @media only screen and (min-width: 48rem) {
