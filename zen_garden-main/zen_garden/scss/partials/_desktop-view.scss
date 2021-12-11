@@ -15,12 +15,13 @@ body {
       
       &::before {
         top: 3rem;
-        left: -3.5rem;
+        left: -4rem;
         font-size: 8em;
       }
 
       &::after {
         bottom: -1rem;
+        right: 1rem;
       }
     }
     p:nth-child(2) {
@@ -265,6 +266,15 @@ body {
       width: 70rem;
       height: 70rem;
     }
+    @include MQ(midM) {
+      width: 73rem;
+      height: 73rem;
+    }
+    @include MQ(M) {
+      width: 78rem;
+      height: 78rem;
+    }
+
     &::before{
       content: "";
       position: relative;
@@ -359,7 +369,7 @@ body {
       
       &::before {
         top: 2rem;
-        left: 0rem;
+        left: -1rem;
       }
 
       &::after {
