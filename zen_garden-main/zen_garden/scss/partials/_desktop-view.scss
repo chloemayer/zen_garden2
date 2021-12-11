@@ -265,12 +265,21 @@ body {
       right: 18%;
       z-index: -100;
       background: url("images/record.svg") 0 0 repeat ;
-      width: 78rem;
-      height: 78rem;
+      width: 68rem;
+      height: 68rem;
       background-repeat: no-repeat;
       //@include MQ(L) {
       animation: rotation 20s linear infinite; 
       //}
+
+      @include MQ(midM) {
+        width: 73rem;
+        height: 73rem;
+      }
+      @include MQ(M) {
+        width: 78rem;
+        height: 78rem;
+      }
     }
       &::after {
         display: none;
