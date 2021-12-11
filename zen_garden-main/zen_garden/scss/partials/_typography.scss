@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap");
 
 $primary-font: "Roboto", sans-serif;
 $secondary-font: "Lobster", cursive;
@@ -46,7 +45,6 @@ abbr[title] {
 h3 {
   font-family: $secondary-font;
   color: $color-1;
-  //text-shadow: 5px 7px #EBEBEB;
   font-size: 2rem;
   margin-top: 0;
   @include MQ(S) {
