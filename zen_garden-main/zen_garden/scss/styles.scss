@@ -6,12 +6,3 @@
 @import "partials/animations";
 @import "partials/typography";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap");
-
-@include MQ(S) {
-  body {
-    background: #ffffff;
-    font-family: $primary-font;
-     max-width: 1200px;
-  }
-}
-

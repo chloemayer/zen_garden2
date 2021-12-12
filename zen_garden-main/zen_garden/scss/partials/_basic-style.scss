@@ -73,7 +73,7 @@ h2 {
     align-self: flex-end;
     &::before {
       @include header-stripe;
-      background-color: #6BA2A2;  ////// (chloe fix this)
+      background-color: #6BA2A2;
       top: 255px;
       $delay: 700ms;
       @include animation($delay);
@@ -140,8 +140,6 @@ h2 {
 }
 .explanation,
 .benefits {
-  // background: $color-3;
-  // border: solid $color-4 0.2rem;
   text-align: center;
 }
 
@@ -155,14 +153,6 @@ header,
   padding: 1rem;
   margin: 1rem;
 }
-
-// .participation {
-//   // background-color: lighten($color-4, 5%);
-//   // border: 4px solid #F86308;
-//   // border-radius: 10px;
-//   // padding: 2rem;
-//   // margin: 0;
-// }
 
 footer {
   display: flex;
@@ -223,7 +213,6 @@ footer {
 
   li {
     list-style: none;
-    // padding-right: 1.5rem;
     margin-left: -1.5rem;
     padding-right: 1rem;
     color: $color-1;

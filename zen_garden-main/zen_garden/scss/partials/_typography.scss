@@ -27,7 +27,6 @@ h1 {
 h2 {
   color: darken($color-3, 20%);
   font-size: 1rem;
-  // text-align: center;
   @include MQ(midS) {
     font-size: 1.5rem;
   }
@@ -59,7 +58,6 @@ p {
     line-height: 150%;
   }
   @include MQ(M) {
-    // font-size: 1.2rem;
     line-height: 175%;
   }
 }

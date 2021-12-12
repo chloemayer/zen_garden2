@@ -3,19 +3,10 @@
 body {
   @include MQ(S) {
   background: white;
+  font-family: $primary-font;
+  max-width: 1200px;
   }
 }
-
-// .summary::after {
-//   @include MQ(S) { 
-//     @include stripe-basic;
-//     width: 15%;
-//     left: 6%;
-//     top: 10%;
-//     background-color: $color-7; 
-//     }
-// }
-
 
 .summary p:nth-child(2) {
     @include MQ(S) { 
@@ -29,47 +20,6 @@ body {
       margin: auto 0;
       background-color: lighten($color-2, 5%);
     }
-    // &::before {
-    //   @include MQ(S) {
-    //   @include stripe-basic;
-    //   width: 15%;
-    //   left: 6%;
-    //   top: 50%;
-    //   background-color: $color-7; 
-    //   }
-    // }
-    // &::after {
-    //   @include MQ(S) {
-    //   @include stripe-basic;
-    //   width: 15.5%;
-    //   left: 6%;
-    //   top: 55%;
-    //   background-color: $color-4; 
-    //   }
-    // }
-    // a {
-    //     &::before {
-    //       @include MQ(S) {
-    //       @include stripe-basic;
-    //       width: 16rem;
-    //       left: 4rem;
-    //       top: 5.6rem;
-    //       background-color: $color-3; 
-    //       }
-    //     }
-    //     &::after {
-    //       @include MQ(S) {
-    //       @include stripe-basic;
-    //       width: 16rem;
-    //       left: 4rem;
-    //       top: 5.6rem;
-    //       background-color: darken($color-3, 20%); 
-    //     }
-    //   }
-    // }
-    // a:link, a:visited {
-      
-    // }
   }
 
 .requirements, footer{
@@ -84,8 +34,6 @@ body {
     margin-left: -40.5rem;
   }
 }
-
-
 
 @include MQ(S) {
 
@@ -250,21 +198,6 @@ body {
     }
   }
 
-  // .benefits::before {
-  //   content: '';
-  //   width: 95%;
-  //   height: 100%;
-  //   position: absolute;
-  //   background-color: lighten($color-4, 5%);
-  //   right: -100%;
-  //   top: 0px;
-  //   margin: 0 1rem;
-  //   @include MQ(L) {
-  //     width: 100%;
-  //     margin: 0;
-  //   }
-  // }
-
 
   .requirements {
     grid-area: requirements;
@@ -303,14 +236,7 @@ body {
       @include MQ(L) {
         top: 400px;
       }
-
-  //  &::after {
-  //     content: '';
-  //     height: 100px;
-  //     width: 100px;
-  //     background-color: $color-4;
-  //   }
-  }
+    }
 
   footer {
     align-items: flex-end;
