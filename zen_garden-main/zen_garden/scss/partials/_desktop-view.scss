@@ -87,7 +87,7 @@ body {
 
 
 
-@media only screen and (min-width: 48rem) {
+@include MQ(S) {
 
   #zen-summary {
     margin: 0;
@@ -397,6 +397,7 @@ body {
     position: relative;
     margin-top: 15rem;
     margin-left: -37.5rem; 
+    z-index: -1;
     
     &:hover{
       transform: scale(1.005);
@@ -453,7 +454,7 @@ body {
 }
 
 
-@media only screen and (min-width: 64rem) {
+@include MQ(M)  {
   .requirements  {
     column-count: 3;
     //PREVIOUS column-width:200px;
