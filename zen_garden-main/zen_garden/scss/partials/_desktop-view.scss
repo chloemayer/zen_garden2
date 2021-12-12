@@ -14,8 +14,7 @@ body {
       position: absolute;
       top: 0px; 
       left: 0px;
-      padding: 2rem; // padding: 2.5rem 3.5rem 2.5rem 2rem;
-      // text-align: right;
+      padding: 2rem;  
       width: 100%;
       margin: auto 0;
       background-color: lighten($color-2, 5%);
@@ -202,7 +201,6 @@ body {
   .requirements {
     grid-area: requirements;
     column-count: 2;
-    //PREVIOUS column-width: 250px
     column-width: auto;
     column-gap: 2rem;
     padding: 5rem 5rem 9rem;
@@ -227,7 +225,6 @@ body {
 
     .requirements p:last-child {
       position: absolute;
-      //PREVIOUS- remove bottom property
       bottom: 1rem;
       width: 100%;
       left: 0px;
@@ -282,9 +279,9 @@ body {
       width: 68rem;
       height: 68rem;
       background-repeat: no-repeat;
-      //@include MQ(L) {
+
       animation: rotation 20s linear infinite; 
-      //}
+
 
       @include MQ(midM) {
         width: 73rem;
@@ -385,7 +382,6 @@ body {
 @include MQ(M)  {
   .requirements  {
     column-count: 3;
-    //PREVIOUS column-width:200px;
     column-width: auto;
     max-width: fit-content;
   }
