@@ -397,7 +397,7 @@ body {
     position: relative;
     margin-top: 15rem;
     margin-left: -37.5rem; 
-    z-index: -1;
+    width: 100%;
     
     &:hover{
       transform: scale(1.005);
@@ -416,6 +416,7 @@ body {
       transform: translate(13rem, 0rem);
       margin-left: 25%; 
       margin-top: -5rem;
+      width: 35%;
     }
     @include MQ(midM) {
       margin-left: 30%;
@@ -445,6 +446,7 @@ body {
       transform: translate(8rem, -1rem);
       margin-left: 25%;
       margin-top: -5rem; 
+      width: 35%;
     }
     @include MQ(midM) {
       margin-left: 30%;
